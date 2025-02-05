@@ -1,0 +1,154 @@
+/* Reset default margins & paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Modern fixed header */
+  #header-section {
+    position: fixed; /* Stick to the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    background-color: #f9f9f9; /* Light background */
+    color: #4caf50; /* Light green text */
+    display: flex;
+    justify-content: space-between; /* Even spacing */
+    align-items: center; /* Center vertically */
+    padding: 20px 40px; /* Adjust padding for better spacing */
+    z-index: 1000; /* Keeps it on top */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for modern effect */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  /* Header title */
+  h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #4caf50; /* Matching green */
+    flex: 1; /* Takes available space */
+  }
+  
+  /* Navigation menu */
+  #navigation {
+    display: flex;
+    list-style: none;
+    flex: 2; /* Takes twice the space of h1 */
+    justify-content: space-evenly; /* Even spacing between menu items */
+    align-items: center;
+    gap: 20px; /* Adds space between the items */
+  }
+  
+  /* Navigation links */
+  #navigation li {
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s ease; /* Smooth color change on hover */
+  }
+  
+  #navigation li:hover {
+    color: #0a7910; /* Slightly brighter green on hover */
+  }
+  
+  /* Links in navigation */
+  #navigation a {
+    text-decoration: none;
+    color: inherit; /* Inherits color from li */
+    font-weight: 500;
+  }
+  
+  /* Language dropdown */
+  #navigation select {
+    padding: 8px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background: #f9f9f9;
+    color: #4caf50; /* Light green text */
+    border-radius: 5px; /* Rounded corners for the select box */
+    transition: background-color 0.3s ease; /* Smooth background change */
+  }
+  
+  /* Hover effect for select box */
+  #navigation select:hover {
+    background-color: #e8f5e9; /* Light green background */
+  }
+  
+  /* Body padding to prevent content from being hidden under the fixed header */
+  body {
+    padding-top: 80px; /* More padding to ensure content isn't covered */
+    background-color: #f4f4f4; /* Subtle background color */
+    font-family: 'Arial', sans-serif; /* Clean modern font */
+  }
+  
+  /* Dropdown container */
+  .language-dropdown {
+    position: relative;
+  }
+  
+  /* Button for the dropdown */
+  .dropdown-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #4caf50; /* Matching green */
+    font-weight: 500;
+    transition: color 0.3s ease; /* Smooth color change */
+    font-size: 20px;
+  }
+  
+  /* Hover effect for dropdown button */
+  .dropdown-btn:hover {
+    color:  #0a7910; /* Brighter green on hover */
+  }
+  
+  /* Dropdown content */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background: #f9f9f9;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    overflow: hidden;
+    width: 150px;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Display the dropdown when hovering over the language container */
+  .language-dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+  }
+  
+  /* Dropdown items */
+  .dropdown-content button {
+    width: 100%;
+    font-size: 18px;
+    text-align: left;
+    background: #f9f9f9;
+    border: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    color: #4caf50;
+    transition: background-color 0.3s ease; /* Smooth background change */
+  }
+  
+  /* Hover effect for each dropdown item */
+  .dropdown-content button:hover {
+    background-color: #e8f5e9; /* Light green background */
+  }
+  
+  /* Style for the flags next to language options */
+  .dropdown-content button img {
+    width: 20px; /* Flag size */
+    height: auto;
+  }
+  
