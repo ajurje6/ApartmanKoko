@@ -1,4 +1,6 @@
 /* Reset default margins & paddings */
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -75,11 +77,16 @@ h1 {
   background-color: #e8f5e9;
 }
 
+#navigation .active {
+  text-decoration: underline;
+  color: #4caf50;  /* Optional: change the color of the active link */
+}
+
 /* Body padding to prevent content from being hidden under the fixed header */
 body {
   padding-top: 80px;
   background-color: #f4f4f4;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Roboto','Arial', sans-serif;
 }
 
 /* Dropdown container */
@@ -184,5 +191,345 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+  }
+}
+
+#about {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;  /* Center the whole content horizontally */
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-top: 15px;
+  background: #e0f2f1;  /* Greenish light background for the entire section */
+  border-radius: 10px;  /* Rounded corners for the entire section */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);  /* Subtle shadow for modern look */
+}
+
+#about-image {
+  width: 40%;  /* Image takes up 40% of the container */
+  display: flex;
+  justify-content: center;  /* Centers the image */
+  align-items: center;  /* Ensures image is vertically centered */
+  border-radius: 10px;  /* Rounded corners for the image */
+  overflow: hidden;  /* Ensures image doesn’t overflow the container */
+  transition: transform 0.3s ease;  /* Smooth transition for zoom effect */
+}
+
+#about-image:hover {
+  transform: scale(1.05);  /* Slight zoom effect on hover */
+}
+
+#about-image img {
+  width: 100%;  /* Ensure image takes up the full width of its container */
+  height: 100%;  /* Ensure image takes up the full height of its container */
+  object-fit: cover;  /* Ensures the image covers the container proportionally */
+}
+
+#about-text-box {
+  flex: 1;  /* Take up the remaining space */
+  padding-right: 30px;
+  background-color: #ffffff;  /* White background for the text box */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);  /* Slight shadow for depth */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Centers the text vertically */
+  border-radius: 10px;  /* Rounded corners for the box */
+  transition: border 0.3s ease, box-shadow 0.3s ease;  /* Smooth transition for border and shadow */
+}
+
+#about-text-box h1 {
+  font-family: "Yuji Mai","Arial", sans-serif;
+  color: #4caf50;  /* Greenish title color */
+  font-size: 2.4rem;
+  margin-top: 0;  /* Remove top margin to bring title closer to the top */
+  margin-bottom: 25px;
+  text-align: center;  /* Center the header */
+  font-weight: 600;
+}
+
+#about-text-box p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin-top: 15px;
+  text-align: center;  /* Center the paragraphs */
+  color: #333;  /* Dark text color for contrast */
+}
+
+/* Hover effect for text box */
+#about-text-box:hover {
+  border: 2px solid #4caf50;  /* Green border on hover */
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2);  /* Greenish shadow effect */
+}
+
+@media (max-width: 768px) {
+  #about {
+    flex-direction: column;  /* Stack items vertically on smaller screens */
+    text-align: center;  /* Center the text */
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+
+  #about-image {
+    width: 100%;  /* Image takes full width on mobile */
+    height: auto;  /* Height adjusts automatically */
+  }
+
+  #about-text-box {
+    width: 100%;  /* Text box takes full width */
+    padding: 15px;  /* Smaller padding for mobile */
+  }
+
+  #about-text-box h1 {
+    font-size: 1.5rem;  /* Smaller title font size */
+  }
+
+  #about-text-box p {
+    font-size: 0.9rem;  /* Smaller paragraph font size */
+  }
+}
+iframe{
+  margin-top: 10px;
+}
+
+/*FOOTER*/
+#footer {
+  padding: 40px 0 10px;
+  color: #4caf50;
+  background-color: #333333;
+}
+#footer-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#social-media-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+}
+.social-media-links {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: 2px solid #4caf50;
+  border-radius: 50%;
+  color: #4caf50;
+  font-size: 24px;
+  transition: all 0.5s ease;
+}
+.social-media-links:hover {
+  background-color: darkgreen;
+  color: #333;
+}
+#footer h4 {
+  color: #4caf50;
+  font-size: 34px;
+  transform: rotate(-2deg);
+  margin-bottom: 10px;
+}
+#copyright {
+  font-size: 18px;
+  text-align: center;
+  color: #4caf50;
+  margin-bottom: 10px;
+}
+#copyright strong {
+  line-height: 2em;
+  font-size: 24px;
+  color: #4caf50;
+}
+
+/*GALLERY*/
+/* Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);  /* 5 images per row */
+  gap: 15px;  /* Space between the images */
+  margin-bottom: 30px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;  /* Fixed height for all images */
+  object-fit: cover;  /* Ensure images maintain aspect ratio and fill the box */
+  border-radius: 8px;  /* Optional: for rounded corners */
+  transition: transform 0.3s ease;  /* Smooth transition on hover */
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);  /* Slight zoom effect when hovered */
+}
+
+/* Slideshow modal styling */
+.modal-content img {
+  width: 80%;  /* Adjust size of the image in the modal */
+  height: auto;  /* Maintain aspect ratio */
+  max-width: 100%;  /* Ensure the image doesn't exceed container width */
+  object-fit: contain;  /* Ensure the image fits within the modal box without distortion */
+  border-radius: 8px;
+}
+
+/* Slideshow modal styling */
+.modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Make sure modal takes full height */
+}
+
+.modal-content img {
+  width: 100%;  /* Ensure it takes the same width as in the gallery */
+  height: 700px;  /* Set the same height as the gallery images */
+  object-fit: cover;  /* Maintain aspect ratio, similar to gallery */
+  border-radius: 8px;  /* Optional: rounded corners in modal */
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);  /* Darkened background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;  /* Increase font size for better visibility */
+  color: #ffffff;  /* White color for the arrow */
+  background-color: rgba(0, 0, 0, 0.4);  /* Semi-transparent background */
+  border: 2px solid #ffffff;  /* White border to make the button stand out */
+  border-radius: 50%;  /* Rounded button */
+  padding: 15px;  /* Increase padding for a larger clickable area */
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease, transform 0.3s ease;  /* Smooth transition for hover effect */
+  display: flex;
+  justify-content: center;  /* Center the arrow inside the button */
+  align-items: center;  /* Vertically center the arrow */
+}
+
+.arrow.left {
+  left: 20px;  /* Increase distance from the left */
+}
+
+.arrow.right {
+  right: 20px;  /* Increase distance from the right */
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.6);  /* Darker background on hover */
+  transform: scale(1.1);  /* Slightly increase size on hover for a more interactive feel */
+  opacity: 1;  /* Remove the opacity effect, focus on scaling */
+}
+
+.arrow:focus {
+  outline: none;
+}
+/* Modal close button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2rem;
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.close-btn:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.close-btn:focus {
+  outline: none;
+}
+
+
+#gallery-title-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: #333333;  /* Darker background for contrast */
+  padding: 30px 0;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+#gallery-heading{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4caf50;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#gallery-heading::before,
+#gallery-heading::after {
+  content: "";
+  flex-grow: 1;
+  height: 2px;
+  background-color: white;
+  margin: 0 15px;
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .gallery-item img {
+    height: 120px;  /* Reduce image height for mobile */
+    object-fit: cover;  /* Ensure images maintain aspect ratio and fill the box */
+  }
+
+  .modal-content img {
+    height: 400px;  /* Adjust image height in modal */
+  }
+
+  .arrow {
+    padding: 10px;  /* Adjust arrow size */
+    font-size: 2rem;  /* Adjust font size for arrow */
+  }
+}
+
+
+
+/* For very small mobile screens (portrait phones) */
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .gallery-item img {
+    height: 80px;  /* Further reduce image height for very small screens */
+  }
+
+  .modal-content img {
+    height: 300px;  /* Adjust modal image size for very small screens */
+  }
+
+  .arrow {
+    padding: 8px;  /* Smaller arrow size */
+    font-size: 1.8rem;  /* Adjust font size for smaller screens */
   }
 }

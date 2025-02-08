@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { NavLink } from "react-router-dom"; // Import NavLink
 
 const languages = [
   { code: "en", label: "English", flag: "https://flagcdn.com/w40/gb.png" },
   { code: "hr", label: "Hrvatski", flag: "https://flagcdn.com/w40/hr.png" },
   { code: "de", label: "Deutsch", flag: "https://flagcdn.com/w40/de.png" },
   { code: "pl", label: "Polski", flag: "https://flagcdn.com/w40/pl.png" },
+  { code: "ru", label: "Русский", flag: "https://flagcdn.com/w40/ru.png" }, 
+  { code: "hu", label: "Magyar", flag: "https://flagcdn.com/w40/hu.png" },
 ];
 
 const Header = () => {
@@ -29,11 +32,39 @@ const Header = () => {
         id="navigation"
         className={menuOpen ? "open" : ""} // Apply "open" class when menu is open
       >
-        <li><a href="#about">{t("about")}</a></li>
-        <li><a href="#gallery">{t("gallery")}</a></li>
-        <li><a href="#pricing">{t("pricing")}</a></li>
-        <li><a href="#review">{t("review")}</a></li>
-        <li><a href="#contact">{t("contact")}</a></li>
+          <li>
+            <NavLink 
+              to="/" 
+              className={({ isActive }) => (isActive ? "active" : "")} // Conditionally apply the 'active' class
+            >
+              {t("home")}
+            </NavLink>
+          </li>
+          <li>
+            <NavLink 
+              to="/accommodation" 
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              {t("accommodation")}
+            </NavLink>
+          </li>
+          <li>
+            <NavLink 
+              to="/gallery" 
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              {t("gallery")}
+            </NavLink>
+          </li>
+          <li>
+            <NavLink 
+              to="/contact" 
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              {t("contact")}
+            </NavLink>
+          </li>
+
         <li className="language-dropdown">
           <button className="dropdown-btn">
             <img

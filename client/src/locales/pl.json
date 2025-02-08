@@ -1,7 +1,13 @@
 {
-    "about": "O nas",
-    "gallery": "Galeria",
-    "pricing": "Cennik i zapytania",
-    "review": "Recenzje",
-    "contact": "Kontakt"
-  }
+  "home": "Strona główna",
+  "accommodation": "Zakwaterowanie",
+  "gallery": "Galeria",
+  "contact": "Kontakt",
+  "Welcome-message": "WITAMY W APARTAMENCIE KOKO",
+  "about-p1": "Położony w spokojnej i malowniczej wiosce Veliko Brdo, niedaleko Makarskiej, Apartament Koko oferuje doskonałe połączenie ciszy i nowoczesnego komfortu. Znajdujący się w spokojnym otoczeniu z zapierającym dech w piersiach widokiem na góry, apartament to idealne miejsce do relaksu.",
+  "about-p2": "Niezależnie od tego, czy planujesz wakacje z rodziną, romantyczny wypad, czy podróż z przyjaciółmi, Apartament Koko zapewnia spokojną oazę, w której możesz odpocząć i tworzyć niezatarte wspomnienia. Apartament został starannie zaprojektowany, aby zaspokoić wszystkie Twoje potrzeby.",
+  "about-p3": "Apartament obejmuje 2 sypialnie, 1 łazienkę, jadalnię, w pełni wyposażoną kuchnię, grill, leżaki i jacuzzi.",
+  "about-p4": "Apartament Koko znajduje się zaledwie 3 kilometry od serca Makarskiej i jej pięknych plaż. Jest idealny dla tych, którzy chcą cieszyć się zarówno spokojem, jak i łatwym dostępem do życia miejskiego. Dla tych, którzy przyjeżdżają samolotem, lotnisko w Splicie jest oddalone o 60 kilometrów, co sprawia, że podróż jest łatwa i wygodna.",
+   "interior-title":"Wnętrze",
+   "exterior-title":"Eksterior"
+}

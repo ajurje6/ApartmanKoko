@@ -1,7 +1,12 @@
-{
-    "about": "About Us",
+{   "home":"Home",
+    "accommodation":"Accommodation",
     "gallery": "Gallery",
-    "pricing": "Pricing and Inquiries",
-    "review": "Reviews",
-    "contact": "Contact"
+    "contact": "Contact",
+    "Welcome-message":"WELCOME TO APARTMENT KOKO",
+    "about-p1":"Nestled in the serene and picturesque village of Veliko Brdo, just outside Makarska, Apartment Koko offers the perfect blend of tranquility and modern comfort. Situated in a peaceful environment with stunning mountain views, the apartment is the ideal place to relax.",
+    "about-p2":"Whether you’re planning a family vacation, a romantic getaway, or a trip with friends, Apartment Koko provides a peaceful sanctuary where you can unwind and create lasting memories. The apartment is thoughtfully designed to cater to all your needs.",
+    "about-p3":"The apartment includes 2 bedrooms, 1 bathroom, a dining area, a fully equipped kitchen, barbecue, sunbeds and jacuzzi.",
+    "about-p4":"Conveniently located just 3 kilometers from the heart of Makarska and its stunning beaches, Apartment Koko is perfect for those who want to enjoy both peaceful seclusion and easy access to city life. For those arriving by air, Split Airport is just 60 kilometers away, making it an easy and convenient journey to your home away from home.",
+    "interior-title":"Interior",
+    "exterior-title":"Exterior"
   }
