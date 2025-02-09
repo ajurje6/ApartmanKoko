@@ -40,5 +40,17 @@
       "comment": "The place is located high above Makarska, with a beautiful view. The apartment is the cleanest we’ve ever stayed in! (2 adults and 2 children aged 10 and 12). On the table in the living room, we were welcomed with a bowl of abundance, prosecco, juice, sweets, snacks, and fruit. The kitchen is fully equipped, and we had tea and 3 (THREE types!) coffees. The apartment had air conditioning, two TVs, Netflix (set to Hungarian for us!), a comfortable bed, a washing machine, and a great jacuzzi. Instead of the noise and crowds of the city center, it’s worth living here as you are on the main road in 4-5 minutes, and many excellent beaches are just ten minutes away. The hosts also provided us with a barbecue. I recommend it to everyone who wants to relax in a beautiful place!",
       "photo": "/images/photo4.png"
     }
-  ]
+  ],
+  "contact_info_title": "Contact Information",
+  "address": "Težačka ulica 7,Veliko Brdo, 21300 Makarska, Croatia",
+  "email": "apartman.koko@gmail.com",
+  "phone": "+123 456 789",
+  "contact_us": "Contact Us",
+  "form-name": "Your Name",
+  "form-email": "Your Email",
+  "form-message": "Your Message",
+  "send_message": "Send Message",
+  "title-email":"Email",
+  "title-address":"Address",
+  "title-phone":"Phone"
   }
