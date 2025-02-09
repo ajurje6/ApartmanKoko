@@ -41,6 +41,18 @@
       "comment": "A hely magasra épült Makarska fölött, gyönyörű kilátással. Az apartman a legtisztább, ahol valaha jártunk! (2 felnőtt és 2 gyermek, 10 és 12 évesek). A nappaliban az asztalon bőséges édesség, prosecco, gyümölcslevek, édességek, nassolnivalók és gyümölcsök várták ránk. A konyha teljesen felszerelt, várt ránk tea és 3 (három különböző!) kávé. Az apartmanban klíma, két TV, Netflix (a mi kedvünkért magyar nyelven!), kényelmes ágy, mosógép és nagyszerű jacuzzi volt. A zaj és a tömeg elől a város központjában inkább itt érdemes élni, mivel 4-5 perc alatt a főúton vagyunk, és 10 percnyire számos remek strand található. A házigazdák grillt is biztosítottak. Ajánlom mindenkinek, aki egy gyönyörű helyen szeretne pihenni!",
       "photo": "/images/photo4.png"
     }
-  ]
+  ],
+  "contact_info_title": "Kapcsolati információk",
+  "address": "Težačka utca 7, Veliko Brdo, 21300 Makarska, Horvátország",
+  "email": "apartman.koko@gmail.com",
+  "phone": "+385 98 906 2994",
+  "contact_us": "Kapcsolatfelvétel",
+  "form-name": "A neved",
+  "form-email": "A e-mailed",
+  "form-message": "A üzeneted",
+  "send_message": "Üzenet küldése",
+  "title-email": "E-mail",
+  "title-address": "Cím",
+  "title-phone": "Telefon"
   }
   

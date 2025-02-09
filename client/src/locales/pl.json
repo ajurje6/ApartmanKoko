@@ -41,5 +41,17 @@
       "comment": "Miejsce znajduje się wysoko nad Makarską, z pięknym widokiem. Apartament jest najczystszy, w jakim kiedykolwiek byliśmy! (2 dorosłych i 2 dzieci w wieku 10 i 12 lat). Na stole w salonie czekała na nas miska pełna smakołyków, prosecco, soków, słodyczy, przekąsek i owoców. Kuchnia jest w pełni wyposażona, czekaliśmy na herbatę i 3 (TRZY rodzaje!) kawy. Apartament miał klimatyzację, dwa telewizory, Netflix (ustawiony na węgierski dla nas!), wygodne łóżko, pralkę i świetne jacuzzi. Zamiast hałasu i tłumów w centrum miasta warto tu mieszkać, bo w 4-5 minut jesteś na głównej drodze, a 10 minut stąd jest wiele świetnych plaż. Gospodarze zapewnili także grill. Polecam każdemu, kto chce odpocząć w pięknym miejscu!",
       "photo": "/images/photo4.png"
     }
-  ]
+  ],
+  "contact_info_title": "Informacje kontaktowe",
+  "address": "Težačka ulica 7, Veliko Brdo, 21300 Makarska, Chorwacja",
+  "email": "apartman.koko@gmail.com",
+  "phone": "+385 98 906 2994",
+  "contact_us": "Skontaktuj się z nami",
+  "form-name": "Twoje imię",
+  "form-email": "Twój e-mail",
+  "form-message": "Twoja wiadomość",
+  "send_message": "Wyślij wiadomość",
+  "title-email": "E-mail",
+  "title-address": "Adres",
+  "title-phone": "Telefon"
 }
