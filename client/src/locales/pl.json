@@ -9,5 +9,37 @@
   "about-p3": "Apartament obejmuje 2 sypialnie, 1 łazienkę, jadalnię, w pełni wyposażoną kuchnię, grill, leżaki i jacuzzi.",
   "about-p4": "Apartament Koko znajduje się zaledwie 3 kilometry od serca Makarskiej i jej pięknych plaż. Jest idealny dla tych, którzy chcą cieszyć się zarówno spokojem, jak i łatwym dostępem do życia miejskiego. Dla tych, którzy przyjeżdżają samolotem, lotnisko w Splicie jest oddalone o 60 kilometrów, co sprawia, że podróż jest łatwa i wygodna.",
    "interior-title":"Wnętrze",
-   "exterior-title":"Eksterior"
+   "exterior-title":"Eksterior",
+   "guest_reviews": "Opinie gości",
+  "no_reviews_available": "Brak dostępnych opinii",
+  "reviews": [
+    {
+      "name": "Róbert",
+      "rating": 10,
+      "date": "2024-08-11",
+      "comment": "Zakwaterowanie spełnia wszystkie potrzeby. Znajduje się w bardzo pięknym otoczeniu. Gospodarz jest bardzo miły i pomocny 👍 W pobliżu jest wiele pięknych plaż 🌅🏖️",
+      "photo": "/images/photo1.png"
+    },
+    {
+      "name": "Roman",
+      "rating": 10,
+      "date": "2024-07-29",
+      "comment": "Po przyjeździe zostaliśmy powitani, przekazano nam klucze i wszystko pokazano. Bardzo ładny i komfortowy dom. Bardzo ciche miejsce! W lodówce było zimne piwo i prosecco. Gospodarze są cudowni i bardzo mili. Dom ma wszystko, co potrzebne. Łóżka są wygodne. W ogrodzie znajduje się jacuzzi, grill (grill jest świetny, potrawy wychodzą bardzo smaczne) i stół do piłkarzyków. Ale podejście jest bardzo strome. Nie będziecie chcieli tam chodzić pieszo. Zalecam jechać tam samochodem. Upewnij się, że masz dobre koła i sprawną ręczną) Lepsza jest też plaża w Tučepi lub Breli, ponieważ plaża w miejscowości jest bardzo zatłoczona.",
+      "photo": "/images/photo2.png"
+    },
+    {
+      "name": "Dániel",
+      "rating": 10,
+      "date": "2022-08-17",
+      "comment": "Zakwaterowanie jest czyste i elegancko urządzone. Właściciele są bardzo mili i pomocni. Aby dostać się do Makarskiej, na pewno potrzebujesz samochodu, który znajduje się około 5-7 minut stąd. Do najpiękniejszych plaż w okolicy można dotrzeć w 15-25 minut.",
+      "photo": "/images/photo3.png"
+    },
+    {
+      "name": "Zoltan Michael Takacs",
+      "rating": 10,
+      "date": "2024-09-01",
+      "comment": "Miejsce znajduje się wysoko nad Makarską, z pięknym widokiem. Apartament jest najczystszy, w jakim kiedykolwiek byliśmy! (2 dorosłych i 2 dzieci w wieku 10 i 12 lat). Na stole w salonie czekała na nas miska pełna smakołyków, prosecco, soków, słodyczy, przekąsek i owoców. Kuchnia jest w pełni wyposażona, czekaliśmy na herbatę i 3 (TRZY rodzaje!) kawy. Apartament miał klimatyzację, dwa telewizory, Netflix (ustawiony na węgierski dla nas!), wygodne łóżko, pralkę i świetne jacuzzi. Zamiast hałasu i tłumów w centrum miasta warto tu mieszkać, bo w 4-5 minut jesteś na głównej drodze, a 10 minut stąd jest wiele świetnych plaż. Gospodarze zapewnili także grill. Polecam każdemu, kto chce odpocząć w pięknym miejscu!",
+      "photo": "/images/photo4.png"
+    }
+  ]
 }

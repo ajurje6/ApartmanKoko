@@ -9,6 +9,38 @@
   "about-p3": "Az apartman 2 hálószobát, 1 fürdőszobát, étkezőt, teljesen felszerelt konyhát, grillezőt, napozóágyakat és jakuzzit tartalmaz.",
   "about-p4": "A Koko Apartman mindössze 3 kilométerre található Makarska központjától és annak gyönyörű strandjaitól. Ideális választás azoknak, akik a csendes elzártságot és a városi élet könnyű elérhetőségét szeretnék élvezni. A Spliti repülőtér mindössze 60 kilométerre van, így kényelmes és gyors utazást biztosít.",
    "interior-title":"Belső tér",
-   "exterior-title":"Külső tér"
+   "exterior-title":"Külső tér",
+   "guest_reviews": "Vendég vélemények",
+  "no_reviews_available": "Nincs elérhető vélemény",
+  "reviews": [
+    {
+      "name": "Róbert",
+      "rating": 10,
+      "date": "2024-08-11",
+      "comment": "A szállás minden igényt kielégít. Nagyon szép környezetben található. A házigazda nagyon kedves és segítőkész 👍 Sok szép strand található a közelben 🌅🏖️",
+      "photo": "/images/photo1.png"
+    },
+    {
+      "name": "Roman",
+      "rating": 10,
+      "date": "2024-07-29",
+      "comment": "Érkezéskor fogadtak minket, átadták a kulcsokat és mindent megmutattak. Nagyon szép és kényelmes ház. Nagyon csendes hely! A hűtőben hideg sör és prosecco volt. A házigazdák csodálatosak és nagyon kedvesek. A ház minden szükséges felszereléssel rendelkezik. Az ágyak kényelmesek. Az udvaron jacuzzi, grillező (nagyon jó grillező, nagyon finom ételek készülnek) és asztali foci található. Az emelkedő azonban nagyon meredek. Nem akarsz oda gyalogolni. Csak autóval ajánlom. Ügyelj a jó kerekekre és a működő kézifékre) A strandot is jobb autóval megközelíteni. A helyi strand túlzsúfolt, így a strandok Tučepi vagy Brela környékén jobbak.",
+      "photo": "/images/photo2.png"
+    },
+    {
+      "name": "Dániel",
+      "rating": 10,
+      "date": "2022-08-17",
+      "comment": "A szállás tiszta és elegánsan berendezett. A tulajdonosok nagyon kedvesek és segítőkészek. A Makarska eléréséhez mindenképpen autóra van szükség, amely körülbelül 5-7 percre van. A környék legszebb strandjai 15-25 perc alatt elérhetők.",
+      "photo": "/images/photo3.png"
+    },
+    {
+      "name": "Zoltan Michael Takacs",
+      "rating": 10,
+      "date": "2024-09-01",
+      "comment": "A hely magasra épült Makarska fölött, gyönyörű kilátással. Az apartman a legtisztább, ahol valaha jártunk! (2 felnőtt és 2 gyermek, 10 és 12 évesek). A nappaliban az asztalon bőséges édesség, prosecco, gyümölcslevek, édességek, nassolnivalók és gyümölcsök várták ránk. A konyha teljesen felszerelt, várt ránk tea és 3 (három különböző!) kávé. Az apartmanban klíma, két TV, Netflix (a mi kedvünkért magyar nyelven!), kényelmes ágy, mosógép és nagyszerű jacuzzi volt. A zaj és a tömeg elől a város központjában inkább itt érdemes élni, mivel 4-5 perc alatt a főúton vagyunk, és 10 percnyire számos remek strand található. A házigazdák grillt is biztosítottak. Ajánlom mindenkinek, aki egy gyönyörű helyen szeretne pihenni!",
+      "photo": "/images/photo4.png"
+    }
+  ]
   }
   

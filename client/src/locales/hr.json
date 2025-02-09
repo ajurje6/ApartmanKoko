@@ -9,5 +9,37 @@
   "about-p3": "Apartman uključuje 2 spavaće sobe, 1 kupaonicu, blagovaonicu, potpuno opremljenu kuhinju, roštilj, ležaljke i jacuzzi.",
   "about-p4": "Savršeno smješten, samo 3 kilometra od centra Makarske i njezinih prekrasnih plaža, Apartman Koko idealan je za one koji žele uživati u mirnoj izolaciji, a istovremeno imati lako pristup gradskoj životu. Za one koji dolaze zrakoplovom, Zračna luka Split udaljena je samo 60 kilometara, što čini putovanje jednostavnim i ugodnim.",
   "interior-title":"Interijer",
-  "exterior-title":"Eksterijer"
+  "exterior-title":"Eksterijer",
+  "guest_reviews": "Recenzije gostiju",
+    "no_reviews_available": "Nema dostupnih recenzija",
+    "reviews": [
+      {
+        "name": "Róbert",
+        "rating": 10,
+        "date": "2024-08-11",
+        "comment": "Smještaj zadovoljava sve potrebe. Nalazi se u vrlo lijepom okruženju.. Domaćin je jako ljubazan i uslužan 👍 U blizini ima mnogo lijepih plaža 🌅🏖️",
+         "photo": "/images/photo1.png"
+      },
+      {
+        "name": "Roman",
+        "rating": 10,
+        "date": "2024-07-29",
+        "comment": "Po dolasku su nas dočekali, predali ključeve i sve pokazali. Vrlo lijepa i ugodna kuća. Vrlo mirno mjesto! U frižideru je bilo hladnog piva i prošeka. Domaćini su divni i jako ljubazni. Kuća ima sve što je potrebno. Kreveti su udobni. U dvorištu se nalazi jacuzzi, roštilj (roštilj je baš odličan, ispadaju jako ukusna jela) i stolni nogomet. Ali uspon je vrlo strm. Nećete željeti hodati tamo. Preporučam isto samo autom. Pazite na dobre kotače i ispravnu ručnu kočnicu) Također je bolje ići na plažu automobilom. Lokalna je velika gužva, pa je bolja plaža u Tučepima ili Brelima.",
+        "photo": "/images/photo2.png"
+      },
+      {
+        "name": "Dániel",
+        "rating": 10,
+        "date": "2022-08-17",
+        "comment": "Smještaj je čist i elegantno namješten. Vlasnici su vrlo ljubazni i uslužni. Za pristup Makarskom moru svakako vam treba automobil koji je udaljen cca 5-7 minuta. Do najljepših plaža u okolici možete stići za 15-25 minuta.",
+        "photo": "/images/photo3.png"
+      },
+      {
+        "name": "Zoltan Michael Takacs",
+        "rating": 10,
+        "date": "2024-09-01",
+        "comment": "Mjesto se nalazi visoko iznad Makarske, s prekrasnim pogledom. Apartman je najčišći u kojem smo ikada bili! (2 odrasle osobe i dvoje djece od 10 i 12 godina)Na stolu u dnevnoj sobi čekala nas je zdjela obilja, prošek, sok, slatkiši, grickalice i voće. Kuhinja je potpuno opremljena, čekao nas je čaj i 3 (TRI vrste!) kave. Apartman je imao klimu, dva TV-a, Netflix pretplatu (postavljenu na mađarski, zbog nas!), udoban krevet, perilicu rublja i odličan jacuzzi. Umjesto buke i gužve u centru grada, ovdje se isplati živjeti jer ste na glavnoj cesti za 4-5 minuta, a desetak minuta udaljeno je mnogo odličnih plaža. Domaćini su nam osigurali i roštiljsku peć. Preporučam svima koji se žele opustiti na prekrasnom mjestu!",
+        "photo": "/images/photo4.png"
+      }
+    ]
 }

@@ -9,5 +9,37 @@
   "about-p3": "Das Apartment umfasst 2 Schlafzimmer, 1 Badezimmer, einen Essbereich, eine voll ausgestattete Küche, einen Grill, Sonnenliegen und einen Whirlpool.",
   "about-p4": "Das Apartment Koko liegt nur 3 Kilometer vom Herzen von Makarska und seinen wunderschönen Stränden entfernt. Es ist perfekt für diejenigen, die sowohl die friedliche Abgeschiedenheit als auch den einfachen Zugang zum Stadtleben genießen möchten. Für diejenigen, die mit dem Flugzeug anreisen, ist der Flughafen Split nur 60 Kilometer entfernt, was die Anreise einfach und bequem macht.",
   "interior-title":"Innenbereich",
-  "exterior-title":"Außenbereich"
+  "exterior-title":"Außenbereich",
+  "guest_reviews": "Gastbewertungen",
+  "no_reviews_available": "Keine Bewertungen verfügbar",
+  "reviews": [
+    {
+      "name": "Róbert",
+      "rating": 10,
+      "date": "2024-08-11",
+      "comment": "Die Unterkunft erfüllt alle Anforderungen. Sie befindet sich in einer sehr schönen Umgebung. Der Gastgeber ist sehr freundlich und hilfsbereit 👍 In der Nähe gibt es viele schöne Strände 🌅🏖️",
+      "photo": "/images/photo1.png"
+    },
+    {
+      "name": "Roman",
+      "rating": 10,
+      "date": "2024-07-29",
+      "comment": "Bei der Ankunft wurden wir begrüßt, die Schlüssel übergeben und alles gezeigt. Sehr schönes und komfortables Haus. Sehr ruhige Lage! Der Kühlschrank hatte kaltes Bier und Prosecco. Die Gastgeber sind wunderbar und sehr freundlich. Das Haus hat alles, was man braucht. Die Betten sind bequem. Im Garten gibt es ein Jacuzzi, einen Grill (der Grill ist wirklich ausgezeichnet, das Essen schmeckt sehr gut) und ein Tischfußballspiel. Der Aufstieg ist jedoch sehr steil. Sie werden dort nicht zu Fuß gehen wollen. Ich empfehle, nur mit dem Auto zu fahren. Achten Sie auf gute Reifen und eine funktionierende Handbremse) Auch zum Strand ist es besser, mit dem Auto zu fahren. Der lokale Strand ist sehr überfüllt, also sind die Strände in Tučepi oder Brela besser.",
+      "photo": "/images/photo2.png"
+    },
+    {
+      "name": "Dániel",
+      "rating": 10,
+      "date": "2022-08-17",
+      "comment": "Die Unterkunft ist sauber und elegant eingerichtet. Die Besitzer sind sehr freundlich und hilfsbereit. Um nach Makarska zu gelangen, braucht man definitiv ein Auto, das etwa 5-7 Minuten entfernt ist. Die schönsten Strände der Umgebung sind in 15-25 Minuten zu erreichen.",
+      "photo": "/images/photo3.png"
+    },
+    {
+      "name": "Zoltan Michael Takacs",
+      "rating": 10,
+      "date": "2024-09-01",
+      "comment": "Der Ort liegt hoch über Makarska und bietet einen wunderschönen Blick. Das Apartment ist das sauberste, in dem wir je waren! (2 Erwachsene und 2 Kinder im Alter von 10 und 12 Jahren). Auf dem Tisch im Wohnzimmer wurden wir mit einer Schale voller Leckereien, Prosecco, Saft, Süßigkeiten, Snacks und Obst begrüßt. Die Küche ist voll ausgestattet, und wir hatten Tee und 3 (DREI verschiedene!) Kaffee. Das Apartment hatte Klimaanlage, zwei Fernseher, Netflix (auf Ungarisch für uns eingestellt!), ein bequemes Bett, eine Waschmaschine und ein großartiges Jacuzzi. Anstatt des Lärms und der Menschenmengen im Stadtzentrum lohnt es sich hier zu wohnen, da man in 4-5 Minuten auf der Hauptstraße ist und zahlreiche tolle Strände nur 10 Minuten entfernt sind. Die Gastgeber haben uns auch einen Grill zur Verfügung gestellt. Ich empfehle es allen, die an einem schönen Ort entspannen wollen!",
+      "photo": "/images/photo4.png"
+    }
+  ]
 }

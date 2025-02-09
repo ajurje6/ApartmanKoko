@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Accommodation from './pages/Accommodation';
 import Home from './pages/Home';
 import Gallery from './pages/Gallery';
+import Contact from './pages/Contact';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/accommodation" element={<Accommodation />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </Router>

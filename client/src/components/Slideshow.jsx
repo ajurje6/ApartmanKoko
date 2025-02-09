@@ -7,21 +7,21 @@ const Slideshow = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(null);
 
   const images = [
-    './images/gallery1.jpg',
-    './images/gallery2.jpg',
-    './images/gallery3.jpg',
-    './images/gallery4.jpg',
-    './images/gallery5.jpg',
-    './images/gallery6.jpg',
-    './images/gallery7.jpg',
-    './images/gallery8.jpg',
-    './images/gallery9.jpg',
-    './images/gallery10.jpg',
-    './images/gallery11.jpg',
-    './images/gallery12.jpg',
-    './images/gallery13.jpg',
-    './images/gallery14.jpg',
-    './images/gallery15.jpg',
+    './images/gallery1.webp',
+    './images/gallery2.webp',
+    './images/gallery3.webp',
+    './images/gallery4.webp',
+    './images/gallery5.webp',
+    './images/gallery6.webp',
+    './images/gallery7.webp',
+    './images/gallery8.webp',
+    './images/gallery9.webp',
+    './images/gallery10.webp',
+    './images/gallery11.webp',
+    './images/gallery12.webp',
+    './images/gallery13.webp',
+    './images/gallery14.webp',
+    './images/gallery15.webp',
   ];
 
   const openModal = (index) => {
