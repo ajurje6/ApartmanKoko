@@ -12,23 +12,23 @@ const Form = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     try {
       const response = await fetch("http://localhost:5000/send", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
-
+  
       const result = await response.json();
       if (result.success) {
-        setStatus(t("message_sent"));
+        window.alert(t("message_sent")); // Show success alert
         setFormData({ name: "", email: "", message: "" }); // Reset form
       } else {
-        setStatus(t("message_failed"));
+        window.alert(t("message_failed")); // Show failure alert
       }
     } catch (error) {
-      setStatus(t("message_failed"));
+      window.alert(t("message_failed")); // Show failure alert
     }
   };
 
