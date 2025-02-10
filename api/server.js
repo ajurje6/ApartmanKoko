@@ -15,9 +15,6 @@ const corsOptions = {
 app.use(cors(corsOptions)); // Use the CORS configuration
 app.use(express.json()); // Parse incoming JSON
 
-// Log the email and password to verify they are loaded correctly
-console.log("Email:", process.env.EMAIL);
-console.log("Password:", process.env.EMAIL_PASSWORD);
 // Configure Nodemailer
 const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com", // Gmail's SMTP host
@@ -33,10 +30,15 @@ app.post("/send", async (req, res) => {
 
   try {
     await transporter.sendMail({
-      from: email,
-      to: process.env.EMAIL, // Your email where you receive messages
+      from: process.env.EMAIL, // Your email
+      to: process.env.EMAIL, // Email where you receive messages
       subject: `New Contact Message from ${name}`,
-      text: message,
+      text: `You have received a new message from:\n\nName: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
+      html: `
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Message:</strong><br>${message}</p>
+      `,
     });
     res.status(200).json({ success: true, message: "Email sent successfully!" });
   } catch (error) {
