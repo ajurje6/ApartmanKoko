@@ -295,8 +295,8 @@ body {
 /*FOOTER*/
 #footer {
   padding: 40px 0 10px;
-  color: #4caf50;
-  background-color: #333333;
+  color: #ffffff;
+  background: linear-gradient(to right, #4caf50, #0a7910);
 }
 #footer-box {
   display: flex;
@@ -317,18 +317,18 @@ body {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  border: 2px solid #4caf50;
+  border: 2px solid #ffffff;
   border-radius: 50%;
-  color: #4caf50;
+  color: #ffffff;
   font-size: 24px;
   transition: all 0.5s ease;
 }
 .social-media-links:hover {
-  background-color: darkgreen;
+  background-color: #e0f2f1;
   color: #333;
 }
 #footer h4 {
-  color: #4caf50;
+  color: #ffffff;
   font-size: 34px;
   transform: rotate(-2deg);
   margin-bottom: 10px;
@@ -336,13 +336,13 @@ body {
 #copyright {
   font-size: 18px;
   text-align: center;
-  color: #4caf50;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 #copyright strong {
   line-height: 2em;
   font-size: 16px;
-  color: #4caf50;
+  color: #ffffff;
 }
 
 /*GALLERY*/
@@ -466,16 +466,16 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  background-color: #333333;  /* Darker background for contrast */
+  background: linear-gradient(to right, #4caf50, #0a7910);
   padding: 30px 0;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 2px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 #gallery-heading{
   font-size: 2.5rem;
   font-weight: bold;
-  color: #4caf50;
+  color: #ffffff;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -635,10 +635,12 @@ body {
 
 .swiper-button-next {
   right: 15px; /* Increased distance for better positioning */
+  color: #4caf50;
 }
 
 .swiper-button-prev {
   left: 15px; /* Increased distance for better positioning */
+  color: #4caf50;
 }
 
 /* Swiper Pagination */
@@ -823,4 +825,129 @@ body {
 .form button:hover {
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* PERKS */
+.perks-section {
+  display: flex;
+  justify-content: center;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.perks-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Left Side - Image */
+.perks-image {
+  width: 50%;
+  max-width: 600px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+}
+
+/* Right Side - Perks Content */
+.perks-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content */
+  width: 50%;
+  padding-left: 3rem;
+}
+
+/* Perks Title */
+.perks-title {
+  font-size: 1.8rem;
+  color: #4caf50;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center; /* Center title */
+  font-family: "Yuji Mai","Arial",sans-serif;
+}
+
+/* Perks Grid */
+.perks-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 100%; /* Make sure it fills the container */
+  max-width: 400px; /* Limit max width for consistency */
+  justify-content: center; /* Center grid */
+}
+
+/* Perk Item */
+.perk-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+  width: 100%; /* Make all perks the same size */
+  height: 70px; /* Set uniform height */
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.perk-item:hover {
+  transform: scale(1.05);
+}
+
+/* Perk Icon */
+.perk-icon {
+  font-size: 1.5rem;
+  color: #4caf50;
+}
+
+/* Perk Text */
+.perk-text {
+  font-size: 1.1rem;
+  color: #4caf50;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .perks-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .perks-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .perks-content {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+
+  .perks-title {
+    text-align: center;
+  }
+
+  .perks-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    justify-content: center; /* Center grid on mobile */
+    width: 100%;
+    max-width: 400px; /* Ensure consistent sizing */
+  }
+
+  .perk-item {
+    height: 70px; /* Maintain uniform height */
+  }
 }

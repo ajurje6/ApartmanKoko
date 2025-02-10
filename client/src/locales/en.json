@@ -52,5 +52,14 @@
   "send_message": "Send Message",
   "title-email":"Email",
   "title-address":"Address",
-  "title-phone":"Phone"
+  "title-phone":"Phone",
+  "apartment_perks": "Apartment Perks",
+  "jacuzzi": "Jacuzzi",
+  "free_parking": "Free Parking",
+  "wifi": "Wi-Fi",
+  "air_conditioning": "Air Conditioning",
+  "tv": "TV",
+  "fully_equipped_kitchen": "Fully Equipped Kitchen",
+  "perks":"PERKS",
+  "sea_view":"Sea View"
   }
