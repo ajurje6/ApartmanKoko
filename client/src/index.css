@@ -833,8 +833,8 @@ body {
   justify-content: center;
   background: #ffffff;
   padding: 2rem;
-  border-radius: 16px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 0px;
 }
 
 .perks-container {
@@ -951,3 +951,162 @@ body {
     height: 70px; /* Maintain uniform height */
   }
 }
+
+/* Calendar */
+.calendar-container {
+  width: 40%;  /* Make the calendar take up 40% of the page width */
+  padding: 10px;
+  margin-left: 10px;  /* Align the calendar to the left */
+  margin-bottom: 15px;
+}
+
+.calendar-section{
+  background-color: #ffffff;
+  margin-top: 0px;
+}
+.calendar-title {
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: #4caf50;
+}
+
+/* Responsive Styles for screens smaller than 768px */
+@media (max-width: 768px) {
+  .calendar-container {
+    width: 80%;  /* On smaller screens, increase the width to 80% */
+    margin-left: auto;  /* Center align the calendar container */
+    margin-right: auto; /* Center align the calendar container */
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+
+  /* Button group for mobile responsiveness */
+  .fc-button-group {
+    display: flex;
+    flex-direction: row; /* Stack buttons vertically */
+    gap: 5px; /* Reduce gap between buttons */
+    width: 100%;  /* Ensure buttons take up full width */
+    align-items: center;  /* Center align the buttons */
+  }
+
+  /* Make buttons smaller on mobile */
+  .fc-button {
+    font-size: 0.85rem;  /* Reduce the font size of the buttons */
+    padding: 4px 10px;  /* Reduce padding to make buttons smaller */
+    min-width: 30px; /* Ensure buttons are not too wide */
+  }
+
+  /* Adjust the size of the title */
+  .calendar-title {
+    font-size: 1.25rem; /* Smaller title size for mobile screens */
+  }
+}
+
+/* Style for fully red unavailable events */
+.fc-event.full-red {
+  background-color: red !important;
+  border-color: red !important; /* Ensure the border is also red */
+}
+
+.fc-daygrid-day-frame.fc-event.full-red {
+  background-color: red !important;
+  border-color: red !important; /* Ensure the border is also red */
+}
+
+/* Calendar Header */
+.fc-header-toolbar {
+  background-color: #f1fdf1; /* Light greenish background for the header */
+  border-bottom: 2px solid #a0d0a3; /* Light green border under the header */
+}
+
+.fc-toolbar-title {
+  color: #4caf50; /* Green color for the month title */
+  font-weight: bold; /* Make the title bold for emphasis */
+}
+
+/* Style the Today button */
+.fc-today-button.fc-button-primary {
+  background-color: #81c784 !important; /* Force the background color to apply */
+  color: white;
+  border: 1px solid #81c784 !important;
+}
+
+/* Today button hover state */
+.fc-today-button.fc-button-primary:hover {
+  background-color: #4caf50 !important; /* Darker green on hover */
+  border-color: #4caf50 !important;
+}
+
+/* Style the Previous/Next buttons */
+.fc-prev-button.fc-button-primary,
+.fc-next-button.fc-button-primary {
+  background-color: #81c784; /* Soft green background */
+  color: white;
+  border: 1px solid #81c784; /* Light green border */
+}
+
+.fc-prev-button.fc-button-primary:hover,
+.fc-next-button.fc-button-primary:hover {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+
+/* Green icon accents */
+.fc-icon-chevron-left,
+.fc-icon-chevron-right {
+  color: white;
+}
+
+/* Button Group */
+.fc-button-group {
+  display: flex;
+  gap: 10px; /* Add some space between buttons */
+  justify-content: center; /* Center align buttons horizontally */
+}
+
+/* Pricing Table Styles */
+.pricing-table-section {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4caf50;
+  margin-bottom: 15px;
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pricing-table th, .pricing-table td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+.pricing-table th {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+}
+
+.pricing-table td {
+  border: 1px solid #ddd;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .pricing-table th, .pricing-table td {
+    padding: 8px;
+  }
+}
+
+

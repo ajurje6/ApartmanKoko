@@ -53,5 +53,18 @@
   "send_message": "Wyślij wiadomość",
   "title-email": "E-mail",
   "title-address": "Adres",
-  "title-phone": "Telefon"
+  "title-phone": "Telefon",
+  "apartment_perks": "Udogodnienia apartamentu",
+  "jacuzzi": "Jacuzzi",
+  "free_parking": "Bezpłatny parking",
+  "wifi": "Wi-Fi",
+  "air_conditioning": "Klimatyzacja",
+  "tv": "Telewizor",
+  "fully_equipped_kitchen": "W pełni wyposażona kuchnia",
+  "perks": "UDOGODNIENIA",
+  "sea_view": "Widok na morze",
+  "availability_calendar": "Kalendarz dostępności",
+  "pricing_information": "Informacje o cenach",
+  "price_range": "Zakres cen",
+  "price_per_night": "Cena za noc"
 }

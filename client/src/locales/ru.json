@@ -53,7 +53,19 @@
   "send_message": "Отправить сообщение",
   "title-email": "Электронная почта",
   "title-address": "Адрес",
-  "title-phone": "Телефон"
-
+  "title-phone": "Телефон",
+  "apartment_perks": "Преимущества квартиры",
+  "jacuzzi": "Джакузи",
+  "free_parking": "Бесплатная парковка",
+  "wifi": "Wi-Fi",
+  "air_conditioning": "Кондиционер",
+  "tv": "Телевизор",
+  "fully_equipped_kitchen": "Полностью оборудованная кухня",
+  "perks": "ПРЕИМУЩЕСТВА",
+  "sea_view": "Вид на море",
+  "availability_calendar": "Календарь доступности",
+  "pricing_information": "Информация о ценах",
+  "price_range": "Ценовой диапазон",
+  "price_per_night": "Цена за ночь"
   }
   

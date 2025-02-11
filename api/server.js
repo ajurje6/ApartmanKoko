@@ -47,4 +47,30 @@ app.post("/send", async (req, res) => {
   }
 });
 
+const axios = require("axios");
+
+// Route to fetch Airbnb calendar
+app.get("/api/calendar/airbnb", async (req, res) => {
+  try {
+    const response = await axios.get(process.env.AIRBNB_ICAL_URL);
+    res.send(response.data);
+  } catch (error) {
+    console.error("Error fetching Airbnb calendar:", error);
+    res.status(500).json({ error: "Failed to fetch calendar data" });
+  }
+});
+
+// Route to fetch Booking.com calendar
+app.get("/api/calendar/booking", async (req, res) => {
+  try {
+    const response = await axios.get(process.env.BOOKING_ICAL_URL);
+    res.send(response.data);
+  } catch (error) {
+    console.error("Error fetching Booking.com calendar:", error);
+    res.status(500).json({ error: "Failed to fetch calendar data" });
+  }
+});
+
+
+
 app.listen(5000, () => console.log("Server running on port 5000"));

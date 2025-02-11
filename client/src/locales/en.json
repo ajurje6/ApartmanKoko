@@ -61,5 +61,9 @@
   "tv": "TV",
   "fully_equipped_kitchen": "Fully Equipped Kitchen",
   "perks":"PERKS",
-  "sea_view":"Sea View"
+  "sea_view":"Sea View",
+  "availability_calendar":"Availability Calendar",
+   "pricing_information": "Pricing Information",
+    "price_range": "Price Range",
+    "price_per_night": "Price per Night"
   }

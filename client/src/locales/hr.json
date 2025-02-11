@@ -53,5 +53,18 @@
     "send_message": "Pošaljite poruku",
     "title-email": "E-mail",
     "title-address": "Adresa",
-    "title-phone": "Telefon"
+    "title-phone": "Telefon",
+    "apartment_perks": "Pogodnosti Apartmana",
+    "jacuzzi": "Jacuzzi",
+    "free_parking": "Besplatan Parking",
+    "wifi": "Wi-Fi",
+    "air_conditioning": "Klima Uređaj",
+    "tv": "TV",
+    "fully_equipped_kitchen": "Potpuno Opremljena Kuhinja",
+    "perks": "POGODNOSTI",
+    "sea_view": "Pogled na More",
+    "availability_calendar": "Kalendar Dostupnosti",
+    "pricing_information": "Informacije o Cijenama",
+    "price_range": "Raspon Cijena",
+    "price_per_night": "Cijena po Noći"
 }

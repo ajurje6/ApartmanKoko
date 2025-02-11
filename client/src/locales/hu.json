@@ -53,6 +53,19 @@
   "send_message": "Üzenet küldése",
   "title-email": "E-mail",
   "title-address": "Cím",
-  "title-phone": "Telefon"
+  "title-phone": "Telefon",
+  "apartment_perks": "Apartman előnyei",
+  "jacuzzi": "Jakuzzi",
+  "free_parking": "Ingyenes parkolás",
+  "wifi": "Wi-Fi",
+  "air_conditioning": "Légkondicionáló",
+  "tv": "TV",
+  "fully_equipped_kitchen": "Teljesen felszerelt konyha",
+  "perks": "ELŐNYÖK",
+  "sea_view": "Tengerre néző kilátás",
+  "availability_calendar": "Elérhetőségi naptár",
+  "pricing_information": "Árinformációk",
+  "price_range": "Ártartomány",
+  "price_per_night": "Ár éjszakánként"
   }
   
