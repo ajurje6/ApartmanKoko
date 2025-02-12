@@ -65,5 +65,7 @@
   "availability_calendar":"Availability Calendar",
    "pricing_information": "Pricing Information",
     "price_range": "Price Range",
-    "price_per_night": "Price per Night"
+    "price_per_night": "Price per Night",
+    "message_sent":"Message sent successfully",
+    "message_failed":"Message failed to send"
   }

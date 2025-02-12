@@ -952,17 +952,40 @@ body {
   }
 }
 
+/* Reduce FullCalendar height */
+.fc {
+  max-height: 500px; /* Adjust this value as needed */
+  overflow: hidden;
+}
+
+.fc-view-harness {
+  max-height: 450px; /* Adjust the height for better visibility */
+}
+
+.fc-scrollgrid {
+  max-height: 400px; /* Ensure the grid doesn't take too much space */
+}
+
+.fc-daygrid-body {
+  max-height: 350px; /* Adjust the height of the calendar body */
+}
+
 /* Calendar */
 .calendar-container {
   width: 40%;  /* Make the calendar take up 40% of the page width */
-  padding: 10px;
+  height: 550px;
+  padding: 20px;
   margin-left: 10px;  /* Align the calendar to the left */
   margin-bottom: 15px;
+  background: #ffffff
 }
 
 .calendar-section{
-  background-color: #ffffff;
+  background: #ffffff;
   margin-top: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .calendar-title {
   font-size: 1.75rem;
@@ -1068,11 +1091,11 @@ body {
 
 /* Pricing Table Styles */
 .pricing-table-section {
-  margin-top: 30px;
+  margin-top: 75px;
+  margin-bottom: 10px;
   padding: 15px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  width: 60%;
 }
 
 .pricing-title {
@@ -1083,8 +1106,9 @@ body {
 }
 
 .pricing-table {
-  width: 100%;
+  width: 90%;
   border-collapse: collapse;
+  height: 300px;
 }
 
 .pricing-table th, .pricing-table td {
@@ -1099,8 +1123,8 @@ body {
 }
 
 .pricing-table td {
-  border: 1px solid #ddd;
-  color: #333;
+  border: 1px solid #4caf50;
+  color: #4caf50;
 }
 
 @media (max-width: 768px) {
@@ -1109,4 +1133,118 @@ body {
   }
 }
 
+
+.inquiries {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f8f0; /* Light green background */
+}
+
+.form {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px; /* Adjusted for larger width */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.descr {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #4CAF50; /* Green tone */
+}
+
+.input {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.input input,
+.input textarea {
+  width: 100%;
+  padding: 12px; /* Larger padding for wider fields */
+  margin: 5px 0;
+  border: 1px solid #4CAF50; /* Green border */
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.input label {
+  position: absolute;
+  left: 10px;
+  top: -8px;
+  font-size: 0.9rem;
+  color: #4CAF50; /* Green tone for labels */
+  background-color: #fff;
+  padding: 0 5px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50; /* Green button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.status-message {
+  text-align: center;
+  margin-top: 15px;
+  color: #4CAF50; /* Green tone */
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: sticky;
+  top: 50%;  /* Center vertically */
+  left: 50%;  /* Center horizontally */
+  width: 50%;  /* Adjust width */
+  max-height: 80%;  /* Max height to prevent stretching */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  z-index: 2000;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);  /* Offset the modal to be exactly centered */
+  padding: 10px;  /* Optional padding to give space from the edges */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;  /* Ensure it fills the modal width */
+  height: auto;  /* Height will adjust automatically */
+  max-height: 90%;  /* Ensure the content height doesn't exceed the container */
+  overflow-y: auto;  /* Allow scrolling if the content exceeds */
+  position: relative;
+}
+
+/* Close Button */
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 18px; /* Smaller close button */
+  background: none;
+  border-radius: 8px;
+  color: #4caf50;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: #333;
+}
 

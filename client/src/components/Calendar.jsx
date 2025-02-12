@@ -4,18 +4,20 @@ import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import ical from 'ical';
 import moment from 'moment';
-// Import FullCalendar locales
 import '@fullcalendar/core/locales/en-gb.js';
 import '@fullcalendar/core/locales/de.js';
 import '@fullcalendar/core/locales/hr.js';
 import '@fullcalendar/core/locales/ru.js';
 import '@fullcalendar/core/locales/pl.js';
 import '@fullcalendar/core/locales/hu.js';
+
 const Calendar = () => {
-  const { t,i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [bookedDates, setBookedDates] = useState([]);
   const [error, setError] = useState(null);
-  const language = i18n.language; 
+ 
+  const language = i18n.language;
+
   const pricingPeriods = [
     { start: moment('2025-06-15'), end: moment('2025-07-31'), price: 120 },
     { start: moment('2025-08-01'), end: moment('2025-08-31'), price: 150 },
@@ -37,46 +39,19 @@ const Calendar = () => {
           const parsed = ical.parseICS(data);
           return Object.values(parsed)
             .filter(event => event.start && event.end)
-            .map(event => {
-              // Parse start and end dates with moment
-              const startDate = moment(event.start).local().toDate();
-              const endDate = moment(event.end).local().toDate();
-
-              let className = 'full-red';  // Default to fully red for unavailable days
-
-              // If the event spans multiple days
-              if (!moment(event.start).isSame(event.end, 'day')) {
-                // For multi-day bookings, mark the entire day as red
-                endDate.setHours(23, 59, 59, 999);  // Set end time to 11:59 PM
-              } else {
-                // If it's a single day booking, mark the entire day as red
-                endDate.setHours(23, 59, 59, 999);  // Set end time to 11:59 PM
-              }
-
-              return {
-                start: startDate,
-                end: endDate,
-                allDay: true,
-                className: className,  // Apply full-red class
-              };
-            });
+            .map(event => ({
+              start: moment(event.start).local().toDate(),
+              end: moment(event.end).local().toDate(),
+              allDay: true,
+              className: 'full-red',
+            }));
         };
 
         const airbnbBookedDates = parseICal(airbnbData);
         const bookingBookedDates = parseICal(bookingData);
-
-        // Combine both and remove duplicates by checking both start and end date
         const allBookedDates = [...airbnbBookedDates, ...bookingBookedDates];
-        const uniqueBookedDates = allBookedDates.filter((date, index, self) =>
-          index === self.findIndex((d) => (
-            // Compare both start and end dates for overlaps
-            (moment(d.start).isSame(date.start, 'day') && moment(d.end).isSame(date.end, 'day')) || 
-            (moment(d.start).isSame(date.start, 'day') && moment(d.end).isAfter(date.start)) || 
-            (moment(d.start).isBefore(date.end) && moment(d.end).isSame(date.end, 'day'))
-          ))
-        );
 
-        setBookedDates(uniqueBookedDates);
+        setBookedDates(allBookedDates);
       } catch (error) {
         setError('Error fetching iCal data.');
         console.error('Error fetching iCal data:', error);
@@ -84,7 +59,21 @@ const Calendar = () => {
     };
 
     fetchCalendarData();
-  }, [t,language]);
+  }, [t, language]);
+
+  const openModal = () => setModalIsOpen(true);
+  const closeModal = () => setModalIsOpen(false);
+  
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('Form Submitted:', formData);
+    alert(t('inquiry_sent'));
+    closeModal();
+  };
 
   if (error) {
     return <div>{error}</div>;
@@ -113,8 +102,8 @@ const Calendar = () => {
           <tbody>
             {pricingPeriods.map((period, index) => (
               <tr key={index}>
-                <td>{`${period.start.format('DD.MM')} - ${period.end.format('DD.MM')}`}</td>
-                <td>{`$${period.price}`}</td>
+                <td>{period.start.format('DD.MM')} - {period.end.format('DD.MM')}</td>
+                <td>${period.price}</td>
               </tr>
             ))}
           </tbody>

@@ -71,6 +71,7 @@ app.get("/api/calendar/booking", async (req, res) => {
   }
 });
 
+//inquiry
 
 
 app.listen(5000, () => console.log("Server running on port 5000"));
