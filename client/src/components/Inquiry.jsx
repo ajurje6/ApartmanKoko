@@ -51,10 +51,17 @@ const Inquiry = () => {
   };
 
   return (
-    <div>
-      {/* Open Modal Button */}
-      <button onClick={() => setIsModalOpen(true)}>{t("open_inquiry_form")}</button>
-
+    <div className="reservation and inquiry container">
+      <div className="reservation-links">
+      <a href="https://www.booking.com/hotel/hr/apartman-koko.hr.html?aid=356980&label=gog235jc-1FCAsoZUINYXBhcnRtYW4ta29rb0gQWANoZYgBAZgBELgBGMgBDNgBAegBAfgBAogCAagCBLgC6NuyvQbAAgHSAiRiZGNkMDkxYi0xNjQxLTRhMmEtODViZS03YzBiNzM5MTJkNzfYAgXgAgE&sid=7ba54be27c9e52841fa1bcc7731c31a8&dest_id=-87968&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1739369967&srpvid=099864b5f80b0049&type=total&ucfs=1&" target="_blank" rel="noopener noreferrer">
+      <img src="images/booking.png" alt="airbnb"/>
+  </a>
+  <a href="https://hr.airbnb.com/rooms/47483345?search_mode=regular_search&adults=1&check_in=2025-06-15&check_out=2025-06-20&children=0&infants=0&pets=0&source_impression_id=p3_1739370036_P3O7" target="_blank" rel="noopener noreferrer">
+    <img src="images/airbnb.png" alt="airbnb"/>
+    </a>
+     {/* Open Modal Button */}
+    <button className="button-o" onClick={() => setIsModalOpen(true)}>{t("open_inquiry_form")}</button>
+      </div>
       {/* Modal */}
       {isModalOpen && (
         <div className="modal-overlay">
@@ -63,10 +70,10 @@ const Inquiry = () => {
               &times; {/* Close button */}
             </button>
 
-            <form className="form" onSubmit={handleSubmit}>
-              <div className="descr">{t("contact_us")}</div>
+            <form className="form-i" onSubmit={handleSubmit}>
+              <div className="descr-i">{t("inquiry_us")}</div>
 
-              <div className="input">
+              <div className="input-i">
                 <input
                   required
                   autoComplete="off"
@@ -80,7 +87,7 @@ const Inquiry = () => {
                 <label htmlFor="name">{t("your-name")}</label>
               </div>
 
-              <div className="input">
+              <div className="input-i">
                 <input
                   required
                   autoComplete="off"
@@ -94,7 +101,7 @@ const Inquiry = () => {
                 <label htmlFor="surname">{t("your-surname")}</label>
               </div>
 
-              <div className="input">
+              <div className="input-i">
                 <input
                   required
                   autoComplete="off"
@@ -108,7 +115,7 @@ const Inquiry = () => {
                 <label htmlFor="email">{t("your-email")}</label>
               </div>
 
-              <div className="input">
+              <div className="input-i">
                 <input
                   required
                   autoComplete="off"
@@ -122,7 +129,7 @@ const Inquiry = () => {
                 <label htmlFor="phone">{t("your-phone")}</label>
               </div>
 
-              <div className="input">
+              <div className="input-i">
                 <input
                   required
                   type="date"
@@ -135,7 +142,7 @@ const Inquiry = () => {
                 <label htmlFor="arrival">{t("your-arrival")}</label>
               </div>
 
-              <div className="input">
+              <div className="input-i">
                 <input
                   required
                   type="date"
@@ -148,7 +155,7 @@ const Inquiry = () => {
                 <label htmlFor="departure">{t("your-departure")}</label>
               </div>
 
-              <div className="input">
+              <div className="input-i">
                 <textarea
                   required
                   cols="30"
@@ -162,7 +169,7 @@ const Inquiry = () => {
                 <label htmlFor="message">{t("your-message")}</label>
               </div>
 
-              <button type="submit">{t("send_message")}</button>
+              <button className="button-i" type="submit">{t("send_message")}</button>
             </form>
           </div>
         </div>
@@ -171,4 +178,4 @@ const Inquiry = () => {
   );
 };
 
-export default Inquiry;
+export default Inquiry; 

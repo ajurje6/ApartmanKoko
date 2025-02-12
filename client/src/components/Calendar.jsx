@@ -10,6 +10,7 @@ import '@fullcalendar/core/locales/hr.js';
 import '@fullcalendar/core/locales/ru.js';
 import '@fullcalendar/core/locales/pl.js';
 import '@fullcalendar/core/locales/hu.js';
+import Inquiry from './Inquiry';
 
 const Calendar = () => {
   const { t, i18n } = useTranslation();
@@ -29,12 +30,12 @@ const Calendar = () => {
       try {
         const airbnbUrl = "http://localhost:5000/api/calendar/airbnb";
         const bookingUrl = "http://localhost:5000/api/calendar/booking";
-
+    
         const [airbnbData, bookingData] = await Promise.all([
           fetch(airbnbUrl).then(res => res.text()),
           fetch(bookingUrl).then(res => res.text())
         ]);
-
+    
         const parseICal = (data) => {
           const parsed = ical.parseICS(data);
           return Object.values(parsed)
@@ -46,35 +47,37 @@ const Calendar = () => {
               className: 'full-red',
             }));
         };
-
+    
         const airbnbBookedDates = parseICal(airbnbData);
         const bookingBookedDates = parseICal(bookingData);
         const allBookedDates = [...airbnbBookedDates, ...bookingBookedDates];
-
-        setBookedDates(allBookedDates);
+    
+        // Sort by start date
+        allBookedDates.sort((a, b) => new Date(a.start) - new Date(b.start));
+    
+        // Deduplicate by checking if the current date's start and end
+        // match with any other previously added dates
+        const deduplicatedBookedDates = allBookedDates.filter((date, index, self) => {
+          // Check if the current event is the same as the previous one
+          return index === 0 || 
+                 (new Date(date.start).getTime() !== new Date(self[index - 1].start).getTime() || 
+                  new Date(date.end).getTime() !== new Date(self[index - 1].end).getTime()) &&
+                 // Check if the event is not overlapping with the previous one
+                 (new Date(date.start).getTime() > new Date(self[index - 1].end).getTime() || 
+                  new Date(date.end).getTime() < new Date(self[index - 1].start).getTime());
+        });
+    
+        setBookedDates(deduplicatedBookedDates);
       } catch (error) {
         setError('Error fetching iCal data.');
         console.error('Error fetching iCal data:', error);
       }
     };
-
+    
+  
     fetchCalendarData();
   }, [t, language]);
-
-  const openModal = () => setModalIsOpen(true);
-  const closeModal = () => setModalIsOpen(false);
   
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Form Submitted:', formData);
-    alert(t('inquiry_sent'));
-    closeModal();
-  };
-
   if (error) {
     return <div>{error}</div>;
   }
@@ -108,6 +111,7 @@ const Calendar = () => {
             ))}
           </tbody>
         </table>
+        <Inquiry/>
       </div>
     </div>
   );

@@ -19,7 +19,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  z-index: 1000;
+  z-index: 100;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease;
 }
@@ -201,7 +201,7 @@ body {
   margin-left: 90px;
   margin-right: 90px;
   margin-top: 15px;
-  background: #e0f2f1;  /* Greenish light background for the entire section */
+  background: #ffffff;  /* Greenish light background for the entire section */
   border-radius: 10px;  /* Rounded corners for the entire section */
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);  /* Subtle shadow for modern look */
 }
@@ -492,7 +492,7 @@ body {
 /* For mobile screens */
 @media (max-width: 768px) {
   .gallery-grid {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .gallery-item img {
@@ -515,11 +515,11 @@ body {
 /* For very small mobile screens (portrait phones) */
 @media (max-width: 480px) {
   .gallery-grid {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .gallery-item img {
-    height: 80px;  /* Further reduce image height for very small screens */
+    height: 100px;  /* Further reduce image height for very small screens */
   }
 
   .modal-content img {
@@ -972,10 +972,10 @@ body {
 
 /* Calendar */
 .calendar-container {
-  width: 40%;  /* Make the calendar take up 40% of the page width */
+  width: 48%;
   height: 550px;
   padding: 20px;
-  margin-left: 10px;  /* Align the calendar to the left */
+  margin-left: 8px;  /* Align the calendar to the left */
   margin-bottom: 15px;
   background: #ffffff
 }
@@ -996,7 +996,7 @@ body {
 /* Responsive Styles for screens smaller than 768px */
 @media (max-width: 768px) {
   .calendar-container {
-    width: 80%;  /* On smaller screens, increase the width to 80% */
+    width: 90%;  /* On smaller screens, increase the width to 80% */
     margin-left: auto;  /* Center align the calendar container */
     margin-right: auto; /* Center align the calendar container */
     height: auto;
@@ -1004,13 +1004,16 @@ body {
     margin-bottom: 15px;
     padding: 10px;
   }
+  .fc{
+    height: 600px;
+  }
 
   /* Button group for mobile responsiveness */
   .fc-button-group {
     display: flex;
     flex-direction: row; /* Stack buttons vertically */
-    gap: 5px; /* Reduce gap between buttons */
-    width: 100%;  /* Ensure buttons take up full width */
+    gap: 4px; /* Reduce gap between buttons */
+    width: 82%;  /* Ensure buttons take up full width */
     align-items: center;  /* Center align the buttons */
   }
 
@@ -1092,6 +1095,7 @@ body {
 /* Pricing Table Styles */
 .pricing-table-section {
   margin-top: 75px;
+  margin-left: 25px;
   margin-bottom: 10px;
   padding: 15px;
   background: #ffffff;
@@ -1109,6 +1113,7 @@ body {
   width: 90%;
   border-collapse: collapse;
   height: 300px;
+  margin-bottom: 20px;
 }
 
 .pricing-table th, .pricing-table td {
@@ -1134,37 +1139,45 @@ body {
 }
 
 
+/* Main container for inquiries */
 .inquiries {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background-color: #f0f8f0; /* Light green background */
+  padding: 0 10px; /* Add padding to avoid content touching the screen edges */
+  width: 100%; /* Ensure it takes up full width */
 }
 
-.form {
+/* Form container */
+.form-i {
   background-color: #ffffff;
   border-radius: 10px;
   padding: 20px;
-  width: 90%;
-  max-width: 500px; /* Adjusted for larger width */
+  width: 100%;
+  max-width: 400px; /* Adjusted max-width for smaller screens */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Center the form horizontally */
 }
 
-.descr {
+/* Form description text */
+.descr-i {
   text-align: center;
   font-size: 1.2rem;
   margin-bottom: 15px;
   color: #4CAF50; /* Green tone */
 }
 
-.input {
+/* Input field container */
+.input-i {
   position: relative;
   margin-bottom: 15px;
 }
 
-.input input,
-.input textarea {
+/* Input and textarea fields */
+.input-i input,
+.input-i textarea {
   width: 100%;
   padding: 12px; /* Larger padding for wider fields */
   margin: 5px 0;
@@ -1173,7 +1186,8 @@ body {
   font-size: 1rem;
 }
 
-.input label {
+/* Label styles */
+.input-i label {
   position: absolute;
   left: 10px;
   top: -8px;
@@ -1183,7 +1197,8 @@ body {
   padding: 0 5px;
 }
 
-button {
+/* Submit button */
+.button-i {
   width: 100%;
   padding: 12px;
   background-color: #4CAF50; /* Green button */
@@ -1194,10 +1209,11 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.button-i:hover {
   background-color: #45a049;
 }
 
+/* Status message */
 .status-message {
   text-align: center;
   margin-top: 15px;
@@ -1206,18 +1222,19 @@ button:hover {
 
 /* Modal Overlay */
 .modal-overlay {
-  position: sticky;
+  position: fixed;  /* Use fixed positioning to ensure it’s fixed relative to the screen */
   top: 50%;  /* Center vertically */
   left: 50%;  /* Center horizontally */
-  width: 50%;  /* Adjust width */
-  max-height: 80%;  /* Max height to prevent stretching */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  transform: translate(-50%, -50%);  /* Offset to achieve true centering */
+  width: 80%;  /* Adjust width to fit better on small screens */
+  max-height: 90vh;  /* Max height of 80% of the viewport height */
   display: flex;
-  z-index: 2000;
   justify-content: center;
   align-items: center;
-  transform: translate(-50%, -50%);  /* Offset the modal to be exactly centered */
-  padding: 10px;  /* Optional padding to give space from the edges */
+  z-index: 1050;  /* Ensure it appears above other elements */
+  padding: 10px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0);
 }
 
 /* Modal Content */
@@ -1225,21 +1242,24 @@ button:hover {
   background-color: white;
   padding: 20px;
   border-radius: 10px;
-  width: 100%;  /* Ensure it fills the modal width */
-  height: auto;  /* Height will adjust automatically */
-  max-height: 90%;  /* Ensure the content height doesn't exceed the container */
-  overflow-y: auto;  /* Allow scrolling if the content exceeds */
+  width: 100%;  /* Ensure the modal takes full width of the modal-overlay */
+  max-width: 600px;  /* Set a max width for better control */
+  height: auto;  /* Content adjusts automatically */
+  max-height: 80vh;  /* Ensure the content height is capped within 80% of the viewport height */
+  overflow-y: auto;  /* Allow scrolling if the content exceeds the modal height */
   position: relative;
+  margin-top: 60px;  /* Adjust based on navbar height */
 }
+
 
 /* Close Button */
 .close-button {
   position: absolute;
   top: 5px;
   right: 5px;
-  font-size: 18px; /* Smaller close button */
+  font-size: 20px; /* Smaller close button */
   background: none;
-  border-radius: 8px;
+  border: none;
   color: #4caf50;
   cursor: pointer;
 }
@@ -1248,3 +1268,97 @@ button:hover {
   color: #333;
 }
 
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .modal-overlay {
+    position: fixed;
+    width: 90%; /* Increase the modal width for mobile */
+    max-height: 90%; /* Max height adjusted for mobile */
+  }
+
+  .modal-content {
+    padding: 15px; /* Reduce padding on smaller screens */
+  }
+
+  .close-button {
+    font-size: 18px; /* Adjust close button size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-overlay {
+    position: fixed;
+    width: 95%; /* Further increase the modal width for very small screens */
+    max-height: 95%; /* Max height adjusted for very small screens */
+  }
+
+  .modal-content {
+    padding: 10px; /* Further reduce padding on very small screens */
+  }
+
+  .close-button {
+    font-size: 16px; /* Adjust close button size for very small screens */
+  }
+}
+  .descr-i {
+    font-size: 1rem; /* Slightly smaller font size */
+  }
+
+  .input-i input,
+  .input-i textarea,
+  .button-i {
+    font-size: 0.85rem; /* Smaller font for mobile */
+  }
+
+  .button-i {
+    padding: 10px; /* Adjust button padding for smaller screens */
+  }
+
+  /* Adjust modal overlay */
+  .modal-overlay {
+    width: 90%; /* Even wider modal */
+  }
+
+/* Container for both reservation links and inquiry button */
+.reservation-and-inquiry-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the items */
+  justify-content: center;
+  width: 30%; /* Increase width to 30% of the screen width */
+  height: auto;
+  margin: 40px auto; /* Add top and bottom margins */
+  text-align: center; /* Center text inside */
+  gap: 20px; /* Add space between links and button */
+  background: #ffffff;
+  padding: 20px; /* Optional: Add padding for spacing inside the container */
+}
+/* Reservation Links */
+.reservation-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: #ffffff;
+}
+
+/* Image inside reservation links */
+.reservation-links img {
+  width: 55%; /* Adjust icon size to fit the 20% container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Button Styling */
+.button-o {
+  padding: 2px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s;
+}
+
+.button-o:hover {
+  background-color: #45a049;
+}

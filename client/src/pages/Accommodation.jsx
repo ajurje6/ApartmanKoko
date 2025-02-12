@@ -10,7 +10,6 @@ const Accommodation = () => {
     <div>
       <Perks/>
       <Calendar/>
-      <Inquiry/>
       <Footer/>
     </div>
   )

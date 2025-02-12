@@ -67,5 +67,14 @@
     "price_range": "Price Range",
     "price_per_night": "Price per Night",
     "message_sent":"Message sent successfully",
-    "message_failed":"Message failed to send"
+    "message_failed":"Message failed to send",
+    "open_inquiry_form":"Send inquiry",
+    "inquiry_us":"INQUIRY FORM",
+    "your-name":"Your name",
+    "your-surname":"Your surname",
+    "your-phone":"Your phone",
+    "your-email":"Your email",
+    "your-arrival":"Arrival",
+    "your-departure":"Departure",
+    "your-message":"Message"
   }
