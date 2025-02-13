@@ -71,7 +71,43 @@ app.get("/api/calendar/booking", async (req, res) => {
   }
 });
 
-//inquiry
+//Handle Inquiry Form Submission
+app.post("/send-inquiry", async (req, res) => {
+  const { name, surname, email, phone, arrival, departure, message } = req.body;
+
+  if (!name || !surname || !email || !arrival || !departure) {
+    return res.status(400).json({ success: false, message: "Missing required fields." });
+  }
+
+  try {
+    await transporter.sendMail({
+      from: process.env.EMAIL, // Your email
+      to: process.env.EMAIL, // Destination email
+      subject: `New Inquiry from ${name} ${surname}`,
+      text: `
+        Name: ${name} ${surname}
+        Email: ${email}
+        Phone: ${phone}
+        Arrival Date: ${arrival}
+        Departure Date: ${departure}
+        Message: ${message}
+      `,
+      html: `
+        <p><strong>Name:</strong> ${name} ${surname}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Phone:</strong> ${phone}</p>
+        <p><strong>Arrival Date:</strong> ${arrival}</p>
+        <p><strong>Departure Date:</strong> ${departure}</p>
+        <p><strong>Message:</strong><br>${message}</p>
+      `,
+    });
+
+    res.status(200).json({ success: true, message: "Inquiry sent successfully!" });
+  } catch (error) {
+    console.error("Error sending inquiry: ", error);
+    res.status(500).json({ success: false, message: "Failed to send inquiry." });
+  }
+});
 
 
 app.listen(5000, () => console.log("Server running on port 5000"));

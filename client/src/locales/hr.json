@@ -66,5 +66,27 @@
     "availability_calendar": "Kalendar Dostupnosti",
     "pricing_information": "Informacije o Cijenama",
     "price_range": "Raspon Cijena",
-    "price_per_night": "Cijena po Noći"
+    "price_per_night": "Cijena po Noći",
+    "message_sent": "Poruka je uspješno poslana",
+    "message_failed": "Slanje poruke nije uspjelo",
+    "open_inquiry_form": "Pošalji upit",
+    "inquiry_us": "UPITNIK",
+    "your-name": "Vaše ime",
+    "your-surname": "Vaše prezime",
+    "your-phone": "Vaš telefon",
+    "your-email": "Vaš email",
+    "your-arrival": "Dolazak",
+    "your-departure": "Odlazak",
+    "your-message": "Poruka",
+    "home_title": "Dobrodošli u naš apartman",
+  "home_description": "Ugodno i udobno mjesto za vaš boravak. Istražite najbolje značajke našeg apartmana.",
+  
+  "accommodation_title": "Opcije smještaja",
+  "accommodation_description": "Pronađite savršenu sobu prema vašim potrebama. Naš apartman nudi različite opcije smještaja za vašu udobnost.",
+  
+  "contact_title": "Kontaktirajte nas",
+  "contact_description": "Obratite nam se za bilo kakve upite ili povratne informacije. Tu smo da vam pomognemo!",
+  
+  "gallery_title": "Galerija",
+  "gallery_description": "Pogledajte prekrasne slike našeg apartmana i sadržaja."
 }

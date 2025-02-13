@@ -76,5 +76,17 @@
     "your-email":"Your email",
     "your-arrival":"Arrival",
     "your-departure":"Departure",
-    "your-message":"Message"
+    "your-message":"Message",
+    "home_title": "Welcome to Our Apartment",
+    "home_description": "A cozy and comfortable place for your stay. Explore the best features of our apartment.",
+  
+    "accommodation_title": "Accommodation Options",
+    "accommodation_description": "Find the perfect room for your needs. Our apartment offers different accommodations for your comfort.",
+  
+    "contact_title": "Contact Us",
+    "contact_description": "Get in touch with us for any inquiries or feedback. We're here to help you!",
+  
+    "gallery_title": "Gallery",
+    "gallery_description": "Browse through beautiful images of our apartment and amenities."
+
   }

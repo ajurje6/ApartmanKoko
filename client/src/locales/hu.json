@@ -66,6 +66,28 @@
   "availability_calendar": "Elérhetőségi naptár",
   "pricing_information": "Árinformációk",
   "price_range": "Ártartomány",
-  "price_per_night": "Ár éjszakánként"
+  "price_per_night": "Ár éjszakánként",
+  "message_sent": "Üzenet sikeresen elküldve",
+  "message_failed": "Az üzenet küldése sikertelen",
+  "open_inquiry_form": "Ajánlatkérés küldése",
+  "inquiry_us": "AJÁNLATKÉRŐ LAP",
+  "your-name": "Az Ön neve",
+  "your-surname": "Az Ön vezetékneve",
+  "your-phone": "Az Ön telefonszáma",
+  "your-email": "Az Ön e-mail címe",
+  "your-arrival": "Érkezés",
+  "your-departure": "Távozás",
+  "your-message": "Üzenet",
+  "home_title": "Üdvözöljük apartmanunkban",
+  "home_description": "Egy kényelmes és barátságos hely a tartózkodásához. Fedezze fel apartmanunk legjobb tulajdonságait.",
+  
+  "accommodation_title": "Szálláslehetőségek",
+  "accommodation_description": "Találja meg az igényeinek legmegfelelőbb szobát. Apartmanunk különféle szálláslehetőségeket kínál a kényelme érdekében.",
+  
+  "contact_title": "Lépjen kapcsolatba velünk",
+  "contact_description": "Vegye fel velünk a kapcsolatot kérdésekkel vagy visszajelzésekkel. Készen állunk segíteni!",
+  
+  "gallery_title": "Galéria",
+  "gallery_description": "Nézze meg apartmanunk és szolgáltatásaink gyönyörű fényképeit."
   }
   

@@ -66,5 +66,27 @@
   "availability_calendar": "Verfügbarkeitskalender",
   "pricing_information": "Preisinformationen",
   "price_range": "Preisspanne",
-  "price_per_night": "Preis pro Nacht"
+  "price_per_night": "Preis pro Nacht",
+  "message_sent": "Nachricht erfolgreich gesendet",
+  "message_failed": "Nachricht konnte nicht gesendet werden",
+  "open_inquiry_form": "Anfrage senden",
+  "inquiry_us": "ANFRAGEFORMULAR",
+  "your-name": "Ihr Name",
+  "your-surname": "Ihr Nachname",
+  "your-phone": "Ihre Telefonnummer",
+  "your-email": "Ihre E-Mail",
+  "your-arrival": "Ankunft",
+  "your-departure": "Abreise",
+  "your-message": "Nachricht",
+  "home_title": "Willkommen in unserer Wohnung",
+  "home_description": "Ein gemütlicher und komfortabler Ort für Ihren Aufenthalt. Entdecken Sie die besten Merkmale unserer Wohnung.",
+  
+  "accommodation_title": "Unterkunftsmöglichkeiten",
+  "accommodation_description": "Finden Sie das perfekte Zimmer für Ihre Bedürfnisse. Unsere Wohnung bietet verschiedene Unterkünfte für Ihren Komfort.",
+  
+  "contact_title": "Kontaktieren Sie uns",
+  "contact_description": "Kontaktieren Sie uns bei Fragen oder Feedback. Wir sind hier, um zu helfen!",
+  
+  "gallery_title": "Galerie",
+  "gallery_description": "Durchstöbern Sie schöne Bilder unserer Wohnung und Annehmlichkeiten."
 }

@@ -63,8 +63,8 @@ const Slideshow = () => {
 
       {/* Modal Slideshow */}
       {isModalOpen && (
-        <div className="modal" onClick={closeModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+        <div className="modal-g" onClick={closeModal}>
+          <div className="modal-content-g" onClick={(e) => e.stopPropagation()}>
             <button className="arrow left" onClick={prevImage}>
               &#8592;
             </button>

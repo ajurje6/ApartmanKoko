@@ -367,7 +367,7 @@ body {
 }
 
 /* Slideshow modal styling */
-.modal-content img {
+.modal-content-g img {
   width: 80%;  /* Adjust size of the image in the modal */
   height: auto;  /* Maintain aspect ratio */
   max-width: 100%;  /* Ensure the image doesn't exceed container width */
@@ -376,21 +376,21 @@ body {
 }
 
 /* Slideshow modal styling */
-.modal-content {
+.modal-content-g {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%; /* Make sure modal takes full height */
 }
 
-.modal-content img {
+.modal-content-g img {
   width: 100%;  /* Ensure it takes the same width as in the gallery */
   height: 700px;  /* Set the same height as the gallery images */
   object-fit: cover;  /* Maintain aspect ratio, similar to gallery */
   border-radius: 8px;  /* Optional: rounded corners in modal */
 }
 
-.modal {
+.modal-g {
   position: fixed;
   top: 0;
   left: 0;
@@ -500,7 +500,7 @@ body {
     object-fit: cover;  /* Ensure images maintain aspect ratio and fill the box */
   }
 
-  .modal-content img {
+  .modal-content-g img {
     height: 400px;  /* Adjust image height in modal */
   }
 
@@ -1040,7 +1040,6 @@ body {
   background-color: red !important;
   border-color: red !important; /* Ensure the border is also red */
 }
-
 /* Calendar Header */
 .fc-header-toolbar {
   background-color: #f1fdf1; /* Light greenish background for the header */
@@ -1063,6 +1062,9 @@ body {
 .fc-today-button.fc-button-primary:hover {
   background-color: #4caf50 !important; /* Darker green on hover */
   border-color: #4caf50 !important;
+}
+.fc-day-today {
+  background-color: #4caf50 !important;
 }
 
 /* Style the Previous/Next buttons */
@@ -1145,7 +1147,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f0f8f0; /* Light green background */
+  background-color: #f0f8f0;
   padding: 0 10px; /* Add padding to avoid content touching the screen edges */
   width: 100%; /* Ensure it takes up full width */
 }
@@ -1184,6 +1186,7 @@ body {
   border: 1px solid #4CAF50; /* Green border */
   border-radius: 5px;
   font-size: 1rem;
+  color: #4CAF50;
 }
 
 /* Label styles */
