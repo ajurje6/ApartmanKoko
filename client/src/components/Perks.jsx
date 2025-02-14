@@ -21,7 +21,7 @@ const Perks = () => {
     <section className="perks-section">
       <div className="perks-container">
         {/* Left Side - Image */}
-        <img src="/images/perks.webp" alt="Apartment" className="perks-image" />
+        <img src="/images/perks2.webp" alt="Apartment" className="perks-image" />
 
         {/* Right Side - Perks Title + Perks Grid */}
         <div className="perks-content">

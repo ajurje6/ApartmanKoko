@@ -4,7 +4,8 @@ const nodemailer = require("nodemailer");
 const cors = require("cors");
 
 const app = express();
-
+const compression = require('compression');
+app.use(compression());
 // CORS configuration
 const corsOptions = {
   origin: "http://localhost:5173", // Allow only requests from this frontend

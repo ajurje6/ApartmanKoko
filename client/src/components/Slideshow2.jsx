@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 const Slideshow2 = () => {
   const { t } = useTranslation();
-  const [isModalOpen, setIsModalOpen] = useState(false); // Define the modal state
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(null);
 
   const images = [
@@ -41,9 +41,9 @@ const Slideshow2 = () => {
 
   return (
     <div>
-        <div id='gallery-title-div'>
-            <h2 id='gallery-heading'>{t("exterior-title")}</h2>
-        </div>
+      <div id='gallery-title-div'>
+        <h2 id='gallery-heading'>{t("exterior-title")}</h2>
+      </div>
       <div className="gallery-grid">
         {images.map((image, index) => (
           <div
@@ -51,7 +51,7 @@ const Slideshow2 = () => {
             className="gallery-item"
             onClick={() => openModal(index)}
           >
-            <img src={image} alt={`Image ${index}`} />
+            <img src={image} alt={`Image ${index}`} loading="lazy" />
           </div>
         ))}
       </div>
@@ -63,12 +63,12 @@ const Slideshow2 = () => {
             <button className="arrow left" onClick={prevImage}>
               &#8592;
             </button>
-            <img src={images[currentImageIndex]} alt="Slideshow" />
+            <img src={images[currentImageIndex]} alt="Slideshow" loading="lazy" />
             <button className="arrow right" onClick={nextImage}>
               &#8594;
             </button>
             <button className="close-btn" onClick={closeModal}>
-              &#10006; {/* Close button */}
+              &#10006;
             </button>
           </div>
         </div>
@@ -78,4 +78,5 @@ const Slideshow2 = () => {
 };
 
 export default Slideshow2;
+
 

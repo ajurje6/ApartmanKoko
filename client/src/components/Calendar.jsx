@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { useTranslation } from 'react-i18next';
-import FullCalendar from '@fullcalendar/react';
-import dayGridPlugin from '@fullcalendar/daygrid';
 import ical from 'ical';
 import moment from 'moment';
+import FullCalendar from "@fullcalendar/react";
+import dayGridPlugin from "@fullcalendar/daygrid"
 import '@fullcalendar/core/locales/en-gb.js';
 import '@fullcalendar/core/locales/de.js';
 import '@fullcalendar/core/locales/hr.js';
@@ -20,9 +20,12 @@ const Calendar = () => {
   const language = i18n.language;
 
   const pricingPeriods = [
-    { start: moment('2025-06-15'), end: moment('2025-07-31'), price: 120 },
-    { start: moment('2025-08-01'), end: moment('2025-08-31'), price: 150 },
-    { start: moment('2025-09-01'), end: moment('2025-09-15'), price: 180 },
+    { start: moment('2025-06-15'), end: moment('2025-06-30'), price: "135€" },
+    { start: moment('2025-07-01'), end: moment('2025-07-14'), price: "165€" },
+    { start: moment('2025-07-15'), end: moment('2025-08-15'), price: "185€" },
+    { start: moment('2025-08-16'), end: moment('2025-08-23'), price: "165€" },
+    { start: moment('2025-08-24'), end: moment('2025-08-31'), price: "145€" },
+    { start: moment('2025-09-01'), end: moment('2025-09-15'), price: "125€" },
   ];
 
   useEffect(() => {
@@ -106,7 +109,7 @@ const Calendar = () => {
             {pricingPeriods.map((period, index) => (
               <tr key={index}>
                 <td>{period.start.format('DD.MM')} - {period.end.format('DD.MM')}</td>
-                <td>${period.price}</td>
+                <td>{period.price}</td>
               </tr>
             ))}
           </tbody>
