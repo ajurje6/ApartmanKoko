@@ -1,4 +1,4 @@
-import React, { useState, useEffect, lazy, Suspense } from 'react';
+import React, { useState, useEffect} from 'react';
 import { useTranslation } from 'react-i18next';
 import ical from 'ical';
 import moment from 'moment';
@@ -90,11 +90,12 @@ const Calendar = () => {
       <div className="calendar-container">
         <h2 className='calendar-title'>{t('availability_calendar')}</h2>
         <FullCalendar
-          plugins={[dayGridPlugin]}
-          initialView="dayGridMonth"
-          events={bookedDates}
-          locale={language}
-        />
+        plugins={[dayGridPlugin]}
+        initialView="dayGridMonth"
+        events={bookedDates}
+        locale={language}
+        eventClassNames={event => event.className}  // Apply the class name for booked dates
+/>
       </div>
       <div className="pricing-table-section">
         <h3 className="pricing-title">{t('pricing_information')}</h3>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { FaWifi, FaCar, FaHotTub, FaSnowflake, FaTv, FaUtensils, FaWater } from "react-icons/fa";
 import { MdSquareFoot } from "react-icons/md";
@@ -6,7 +6,8 @@ import { MdSquareFoot } from "react-icons/md";
 const Perks = () => {
   const { t } = useTranslation();
 
-  const perksList = [
+  // Use useMemo to prevent unnecessary re-renders
+  const perksList = useMemo(() => [
     { icon: <FaWater className="perk-icon" />, text: t("sea_view") },
     { icon: <MdSquareFoot className="perk-icon" />, text: "56m²" },
     { icon: <FaHotTub className="perk-icon" />, text: t("jacuzzi") },
@@ -15,13 +16,18 @@ const Perks = () => {
     { icon: <FaSnowflake className="perk-icon" />, text: t("air_conditioning") },
     { icon: <FaTv className="perk-icon" />, text: t("tv") },
     { icon: <FaUtensils className="perk-icon" />, text: t("fully_equipped_kitchen") },
-  ];
+  ], [t]);
 
   return (
     <section className="perks-section">
       <div className="perks-container">
         {/* Left Side - Image */}
-        <img src="/images/perks2.webp" alt="Apartment" className="perks-image" />
+        <img
+          src="/images/perks2.webp"
+          alt="Apartment"
+          className="perks-image"
+          loading="lazy" // Lazy load the image
+        />
 
         {/* Right Side - Perks Title + Perks Grid */}
         <div className="perks-content">
@@ -42,3 +48,4 @@ const Perks = () => {
 };
 
 export default Perks;
+

@@ -1,9 +1,7 @@
 import React from 'react'
-import { useTranslation } from 'react-i18next';
 import { faFacebookF, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Footer = () => {
-    const { t } = useTranslation();
   return (
     <section id="footer">
       <div id="footer-box" className="container">

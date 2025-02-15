@@ -1033,12 +1033,15 @@ body {
 /* Style for fully red unavailable events */
 .fc-event.full-red {
   background-color: red !important;
-  border-color: red !important; /* Ensure the border is also red */
+  border-color: red !important;
 }
 
 .fc-daygrid-day-frame.fc-event.full-red {
   background-color: red !important;
-  border-color: red !important; /* Ensure the border is also red */
+  border-color: red !important;
+}
+.fc-day-today {
+  background-color: #4caf50 !important;
 }
 /* Calendar Header */
 .fc-header-toolbar {
@@ -1056,15 +1059,6 @@ body {
   background-color: #81c784 !important; /* Force the background color to apply */
   color: white;
   border: 1px solid #81c784 !important;
-}
-
-/* Today button hover state */
-.fc-today-button.fc-button-primary:hover {
-  background-color: #4caf50 !important; /* Darker green on hover */
-  border-color: #4caf50 !important;
-}
-.fc-day-today {
-  background-color: #4caf50 !important;
 }
 
 /* Style the Previous/Next buttons */
