@@ -1,21 +1,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://localhost:5173/</loc>
+    <loc>"https://apartmankoko-makarska.onrender.com"</loc>
     <lastmod>2025-02-13</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/accommodation</loc>
+    <loc>"https://apartmankoko-makarska.onrender.com/accommodation"</loc>
     <lastmod>2025-02-13</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/gallery</loc>
+    <loc>"https://apartmankoko-makarska.onrender.com/gallery"</loc>
     <lastmod>2025-02-13</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/contact</loc>
+    <loc>"https://apartmankoko-makarska.onrender.com/contact"</loc>
     <lastmod>2025-02-13</lastmod>
     <priority>0.80</priority>
   </url>
