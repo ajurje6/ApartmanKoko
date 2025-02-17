@@ -14,8 +14,11 @@ app.use(compression());
 
 // CORS configuration
 const corsOptions = {
-  origin: "https://apartmankoko-makarska.onrender.com", // Allow only requests from this frontend
-  methods: ["GET", "POST"], // Allow only GET and POST methods
+  origin: [
+    "http://localhost:5173", // Local development
+    "https://apartmankoko-makarska.onrender.com", // Deployed frontend
+  ],
+  methods: ["GET", "POST"],
   allowedHeaders: ["Content-Type"],
 };
 app.use(cors(corsOptions));
