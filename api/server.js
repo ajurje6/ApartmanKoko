@@ -14,7 +14,7 @@ app.use(compression());
 
 // CORS configuration
 const corsOptions = {
-  origin: "http://localhost:3000", // Allow only requests from this frontend
+  origin: "http://localhost:5173", // Allow only requests from this frontend
   methods: ["GET", "POST"], // Allow only GET and POST methods
   allowedHeaders: ["Content-Type"],
 };
