@@ -3,12 +3,6 @@ node_modules/
 api/node_modules/
 client/node_modules/
 
-# Build files
-dist/
-dist-ssr/
-api/dist/
-client/dist/
-
 # Environment variables
 .env
 .env.*
