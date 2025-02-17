@@ -7,6 +7,7 @@ const compression = require("compression");
 const axios = require("axios");
 const rateLimit = require("express-rate-limit");
 const { check, validationResult } = require("express-validator");
+const path = require("path");
 
 const app = express();
 app.use(helmet());
@@ -45,7 +46,6 @@ app.use((req, res, next) => {
   next();
 });
 
-
 // Configure Nodemailer
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
@@ -57,11 +57,9 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-// Send Contact Form Email
+// API Routes
 app.post("/send", async (req, res) => {
   const { name, email, message } = req.body;
-
-  // Validate input
   if (!name || !email || !message) {
     return res.status(400).json({ success: false, message: "Missing required fields." });
   }
@@ -81,7 +79,7 @@ app.post("/send", async (req, res) => {
   }
 });
 
-// Route to fetch Airbnb calendar
+// Fetch Airbnb Calendar
 app.get("/api/calendar/airbnb", async (req, res) => {
   try {
     const response = await axios.get(process.env.AIRBNB_ICAL_URL);
@@ -92,7 +90,7 @@ app.get("/api/calendar/airbnb", async (req, res) => {
   }
 });
 
-// Route to fetch Booking.com calendar
+// Fetch Booking.com Calendar
 app.get("/api/calendar/booking", async (req, res) => {
   try {
     const response = await axios.get(process.env.BOOKING_ICAL_URL);
@@ -103,7 +101,7 @@ app.get("/api/calendar/booking", async (req, res) => {
   }
 });
 
-// Handle Inquiry Form Submission
+// Inquiry Form Submission
 app.post(
   "/send-inquiry",
   [
@@ -136,7 +134,15 @@ app.post(
     }
   }
 );
-const port = process.env.PORT || 5000;
 
-// Start the server
+// Serve static files from React's dist folder
+app.use(express.static(path.join(__dirname, 'client', 'dist')));
+
+// Catch-all route for React Router to handle non-API routes
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client", "dist", "index.html"));
+});
+
+const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Server running on port ${port}`));
+
