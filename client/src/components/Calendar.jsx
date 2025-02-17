@@ -31,8 +31,8 @@ const Calendar = () => {
   useEffect(() => {
     const fetchCalendarData = async () => {
       try {
-        const airbnbUrl = "https://apartman-koko-backend.onrender.com/api/calendar/airbnb";
-        const bookingUrl = "https://apartman-koko-backend.onrender.com/api/calendar/booking";
+        const airbnbUrl = "http://localhost:3000/api/calendar/airbnb";
+        const bookingUrl = "http://localhost:3000/api/calendar/booking";
     
         const [airbnbData, bookingData] = await Promise.all([
           fetch(airbnbUrl).then(res => res.text()),

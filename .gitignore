@@ -3,6 +3,8 @@ node_modules/
 api/node_modules/
 client/node_modules/
 
+dist/
+
 # Environment variables
 .env
 .env.*
