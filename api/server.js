@@ -137,7 +137,6 @@ app.post(
 
 // Serve static files from the React app's build folder
 app.use(express.static(path.join(__dirname, '..', 'client', 'dist')));
-
 // Catch-all route for React Router
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'client', 'dist', 'index.html'));
