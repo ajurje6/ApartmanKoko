@@ -135,12 +135,12 @@ app.post(
   }
 );
 
-// Serve static files from React's dist folder
-app.use(express.static(path.join(__dirname, 'client', 'dist')));
+// Serve static files from the React app (dist folder)
+app.use(express.static(path.join(__dirname, "dist")));
 
-// Catch-all route for React Router to handle non-API routes
+// For any route that doesn't match an API route, return the index.html from dist
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "client", "dist", "index.html"));
+  res.sendFile(path.join(__dirname, "dist", "index.html"));
 });
 
 const port = process.env.PORT || 5000;
