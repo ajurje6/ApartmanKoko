@@ -12,8 +12,6 @@ const path = require("path");
 const app = express();
 app.use(helmet());
 app.use(compression());
-const __dirname = path.resolve();
-
 // CORS configuration
 const corsOptions = {
   origin: [
