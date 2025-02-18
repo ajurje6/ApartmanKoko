@@ -33,18 +33,6 @@ const limiter = rateLimit({
 });
 app.use(limiter);
 
-// Content Security Policy
-app.use((req, res, next) => {
-  res.setHeader(
-    "Content-Security-Policy",
-    "default-src 'self'; " +
-    "font-src 'self' https://fonts.gstatic.com; " +
-    "script-src 'self' https://maps.googleapis.com; " +
-    "style-src 'self' https://fonts.googleapis.com; " +
-    "img-src 'self' https://flagcdn.com;"
-  );
-  next();
-});
 
 // Configure Nodemailer
 const transporter = nodemailer.createTransport({
