@@ -12,7 +12,7 @@ const path = require("path");
 const app = express();
 app.use(helmet());
 app.use(compression());
-
+const __dirname=path.resolve();
 // CORS configuration
 const corsOptions = {
   origin: [
@@ -124,10 +124,10 @@ app.post(
 );
 
 // Serve static files from the React app's build folder
-app.use(express.static(path.join(__dirname, '..', 'client', 'dist')));
+app.use(express.static(path.join(__dirname,'client', 'dist')));
 // Catch-all route for React Router
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '..', 'client', 'dist', 'index.html'));
+  res.sendFile(path.join(__dirname,'client', 'dist', 'index.html'));
 });
 
 const port = process.env.PORT || 5000;
