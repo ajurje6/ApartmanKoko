@@ -8,7 +8,6 @@ const axios = require("axios");
 const rateLimit = require("express-rate-limit");
 const { check, validationResult } = require("express-validator");
 const path = require("path");
-const __dirname=path.resolve();
 const app = express();
 app.use(helmet());
 app.use(compression());
