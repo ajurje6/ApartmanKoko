@@ -996,7 +996,7 @@ body {
 /* Responsive Styles for screens smaller than 768px */
 @media (max-width: 768px) {
   .calendar-container {
-    width: 90%;  /* On smaller screens, increase the width to 80% */
+    width: 90%;
     margin-left: auto;  /* Center align the calendar container */
     margin-right: auto; /* Center align the calendar container */
     height: auto;
@@ -1131,6 +1131,31 @@ body {
 @media (max-width: 768px) {
   .pricing-table th, .pricing-table td {
     padding: 8px;
+  }
+}
+@media (max-width: 768px) {
+  .calendar-section {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align them */
+  }
+
+  .calendar-container, .pricing-table-section {
+    width: 90%; /* Ensure both take up most of the width */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pricing-table-section {
+    margin-top: 20px; /* Add spacing between the calendar and pricing table */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the table */
+    text-align: center;
+  }
+
+  .pricing-table {
+    width: 100%; /* Ensure table takes full width */
   }
 }
 

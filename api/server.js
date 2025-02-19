@@ -14,7 +14,7 @@ app.use(compression());
 // CORS configuration
 const corsOptions = {
   origin: [
-    "http://localhost:49721", // Local development
+    "http://localhost:54848", // Local development
     "https://apartmankoko-makarska.onrender.com", // Deployed frontend
   ],
   methods: ["GET", "POST"],
