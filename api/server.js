@@ -16,10 +16,11 @@ const corsOptions = {
   origin: [
     "http://localhost:54848", // Local development
     "https://apartmankoko-makarska.onrender.com",
-    "https://www.apartmankoko-makarska.com/"
+    "https://www.apartmankoko-makarska.com"
   ],
   methods: ["GET", "POST"],
   allowedHeaders: ["Content-Type"],
+  credentials: true, 
 };
 app.use(cors(corsOptions));
 
